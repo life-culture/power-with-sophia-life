@@ -1,0 +1,101 @@
+{
+  "id": "pg_eqq4fwgk2a",
+  "title": "Thank you",
+  "slug": "thank-you",
+  "seo": {},
+  "hidden": true,
+  "sections": [
+    {
+      "id": "sec_exg28018xt",
+      "preset": "component/pw2-page-hero@1",
+      "label": "Page opening (Obsidian)",
+      "anchor": "confirmation",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_m1181hm15k",
+          "type": "component/pw2-page-hero",
+          "v": 1,
+          "fields": {
+            "body": "Look for an email from Sophia in the next few minutes. Move it to your primary inbox so her letters keep reaching you.",
+            "formFollows": false,
+            "items": [],
+            "kicker": "Thank you",
+            "showSigil": true,
+            "title": "The words are on their way."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_acvh3gedr7",
+      "preset": "component/pw2-links@1",
+      "label": "Link blocks",
+      "anchor": "next",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light-accent",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_wsm32f2vmm",
+          "type": "component/pw2-links",
+          "v": 1,
+          "fields": {
+            "blocks": [
+              {
+                "body": "In December, readers on the list receive the Introduction to Power With, free, before the book is released.",
+                "buttonLabel": "Watch the performance",
+                "buttonLink": {
+                  "anchor": "performance",
+                  "page": "pg_kpb904t192",
+                  "type": "page"
+                },
+                "headline": "The Introduction, before release.",
+                "label": "What comes next"
+              },
+              {
+                "body": "Share Power With with them.",
+                "buttonLabel": "About the book",
+                "buttonLink": {
+                  "page": "pg_h3kx8njq8t",
+                  "type": "page"
+                },
+                "headline": "Know someone who leads?",
+                "label": "Share"
+              }
+            ],
+            "ground": "stone"
+          }
+        }
+      ]
+    }
+  ]
+}

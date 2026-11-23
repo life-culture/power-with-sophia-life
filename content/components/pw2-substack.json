@@ -1,0 +1,111 @@
+{
+  "name": "pw2-substack",
+  "label": "Substack (essays)",
+  "description": "Round arrows, an Instagram-shaped essay card (4:5) that cycles through essays, a headline, a line and a rounded Subscribe on Substack button.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "buttonLabel": {
+      "kind": "text",
+      "label": "Button text",
+      "maxLength": 40
+    },
+    "buttonLink": {
+      "kind": "link",
+      "label": "Button link"
+    },
+    "cardLabel": {
+      "kind": "text",
+      "label": "Small label on the card",
+      "maxLength": 60
+    },
+    "essays": {
+      "kind": "list",
+      "label": "Essays",
+      "fields": {
+        "description": {
+          "kind": "text",
+          "label": "One sentence describing the essay",
+          "optional": true,
+          "maxLength": 240
+        },
+        "image": {
+          "kind": "image",
+          "label": "Instagram image (1080 × 1350)",
+          "optional": true
+        },
+        "link": {
+          "kind": "link",
+          "label": "Essay link",
+          "optional": true
+        },
+        "subheading": {
+          "kind": "text",
+          "label": "Subheading",
+          "optional": true,
+          "maxLength": 160
+        },
+        "title": {
+          "kind": "text",
+          "label": "Essay title",
+          "maxLength": 120
+        }
+      },
+      "min": 1,
+      "max": 8,
+      "itemLabel": "title"
+    },
+    "headline": {
+      "kind": "text",
+      "label": "Headline",
+      "maxLength": 140
+    },
+    "intro": {
+      "kind": "text",
+      "label": "Line under the headline",
+      "optional": true,
+      "maxLength": 300
+    }
+  },
+  "defaults": {
+    "buttonLabel": "Subscribe on Substack",
+    "buttonLink": {
+      "type": "url",
+      "url": "https://substack.com"
+    },
+    "cardLabel": "The quality of life",
+    "essays": [
+      {
+        "description": "[One sentence describing the essay.]",
+        "subheading": "[Subheading]",
+        "title": "[Essay title]"
+      },
+      {
+        "description": "[One sentence describing the essay.]",
+        "subheading": "[Subheading]",
+        "title": "[Second essay title]"
+      },
+      {
+        "description": "[One sentence describing the essay.]",
+        "subheading": "[Subheading]",
+        "title": "[Third essay title]"
+      }
+    ],
+    "headline": "Read more from Sophia on Substack.",
+    "intro": "The Quality of Life. [One line on what the publication explores.]"
+  },
+  "template": "<div class=\"pw pad\"><div class=\"in\"><div class=\"arrows\"><button class=\"arr prev\" type=\"button\" aria-label=\"Previous essay\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M20 12H4M10 6l-6 6 6 6\"></path></svg></button><button class=\"arr next\" type=\"button\" aria-label=\"Next essay\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16M14 6l6 6-6 6\"></path></svg></button></div><div class=\"g\"><div class=\"cards rv\">{{#each essays}}<div class=\"essay\">{{#if image}}<div class=\"bg\">{{image image sizes=\"440px\"}}</div>{{/if}}<svg class=\"sg\" viewBox=\"0 0 120 80\" aria-hidden=\"true\"><circle cx=\"46\" cy=\"40\" r=\"28\"></circle><circle cx=\"74\" cy=\"40\" r=\"28\"></circle></svg><span class=\"k\">{{../cardLabel}}</span>{{#if link}}<a class=\"t\" href=\"{{href link}}\">{{title}}</a>{{else}}<span class=\"t\">{{title}}</span>{{/if}}{{#if subheading}}<span class=\"st\">{{subheading}}</span>{{/if}}{{#if description}}<span class=\"up\">{{description}}</span>{{/if}}</div>{{/each}}</div><div><h2 class=\"rv\" data-trim>{{headline}}</h2>{{#if intro}}<p class=\"intro rv d1\">{{intro}}</p>{{/if}}<a class=\"pill rv d2\" href=\"{{href buttonLink}}\"><i aria-hidden=\"true\"></i>{{buttonLabel}}</a></div></div></div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left;background:var(--stone);color:var(--ink)}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.pad{padding:160px 0}\n.pw h2{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;margin:0;text-wrap:balance;text-indent:-.0333em}\n.intro{margin:24px 0 0;max-width:36em}\n.arrows{display:flex;justify-content:flex-end;gap:16px;margin-bottom:64px}\n.arr{width:64px;height:64px;border-radius:50%;border:1px solid rgba(1,10,18,.25);background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:border-color .3s,background .3s}\n.arr:hover{border-color:var(--ink);background:rgba(1,10,18,.04)}\n.arr svg{width:22px}\n.arr svg *{fill:none;stroke:var(--ink);stroke-width:1.3}\n.g{display:grid;grid-template-columns:5fr 7fr;gap:96px;align-items:center}\n.essay{aspect-ratio:4/5;width:100%;max-width:440px;border-radius:0;background:var(--ink);color:var(--bone);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:40px}\n.cards .essay+.essay{display:none}\n.cards.js .essay{display:none}\n.cards.js .essay.on{display:flex}\n.essay:before{content:\"\";position:absolute;inset:0;background:radial-gradient(60% 70% at 70% 30%,rgba(140,91,70,.4),rgba(1,10,18,0) 70%);z-index:1}\n.essay .bg{position:absolute;inset:0}\n.essay .bg .os-img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;padding:0;border:0;background:none}\n.essay .bg img{width:100%;height:100%;object-fit:cover;display:block;max-width:none}\n.essay .sg{position:absolute;right:36px;top:36px;width:120px;z-index:2}\n.essay .sg circle{fill:none;stroke:var(--gilt);stroke-width:.7}\n.essay .k{position:relative;z-index:2;font-family:var(--label);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--sand)}\n.essay .t{position:relative;z-index:2;font-family:var(--head);font-style:italic;font-weight:500;font-size:36px;line-height:1.15;margin-top:12px;color:var(--bone);text-decoration:none}\n.essay .st{position:relative;z-index:2;margin-top:10px;font-size:18px;line-height:1.4;color:var(--stone)}\n.essay .up{position:relative;z-index:2;margin-top:22px;padding-top:14px;border-top:1px solid rgba(187,175,163,.3);font-family:var(--body);font-size:17px;line-height:1.45;color:var(--sand)}\n.pill{display:inline-flex;align-items:center;gap:14px;margin-top:40px;min-height:64px;padding:0 40px;border-radius:999px;border:1px solid rgba(1,10,18,.25);background:var(--bone);font-family:var(--label);font-size:13px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ink);transition:border-color .3s,background .3s}\n.pill:hover{border-color:var(--ink);background:#f4efe5}\n.pill i{display:inline-block;width:16px;height:18px;background:linear-gradient(var(--clay) 0 18%,transparent 18% 32%,var(--clay) 32% 50%,transparent 50% 62%,var(--clay) 62% 100%);clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}\n.js-rv .d2{transition-delay:.24s}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.pw h2{font-size:40px}.g{grid-template-columns:1fr;gap:32px}.arrows{margin-bottom:32px}.essay{padding:28px}.essay .t{font-size:28px}.essay .sg{width:80px;right:24px;top:24px}.pill{padding:0 26px}}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var cards=p.querySelector('.cards');var list=cards?[].slice.call(cards.querySelectorAll('.essay')):[];var i=0;function show(){list.forEach(function(e,n){e.classList.toggle('on',n===i);});}if(list.length){cards.classList.add('js');show();}var pv=p.querySelector('.prev'),nx=p.querySelector('.next');if(pv)pv.addEventListener('click',function(){i=(i-1+list.length)%list.length;show();});if(nx)nx.addEventListener('click',function(){i=(i+1)%list.length;show();});var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(t.charAt(0)).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;p.classList.add('js-rv');var els=p.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    }
+  },
+  "ai": {
+    "purpose": "Substack essays with Instagram-shaped cards.",
+    "whenToUse": "Home page, near the end."
+  }
+}

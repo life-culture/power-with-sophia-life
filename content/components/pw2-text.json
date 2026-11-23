@@ -1,0 +1,87 @@
+{
+  "name": "pw2-text",
+  "label": "Text page",
+  "description": "Label, line, title and formatted text in a narrow column, for pages such as Privacy.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "content": {
+      "kind": "richText",
+      "label": "Text"
+    },
+    "ground": {
+      "kind": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "ink",
+          "label": "Obsidian"
+        },
+        {
+          "value": "bone",
+          "label": "Bone"
+        },
+        {
+          "value": "stone",
+          "label": "Stone"
+        },
+        {
+          "value": "oxblood",
+          "label": "Oxblood"
+        },
+        {
+          "value": "clay",
+          "label": "Clay"
+        }
+      ]
+    },
+    "isTitle": {
+      "kind": "boolean",
+      "label": "This is the page title (h1)"
+    },
+    "kicker": {
+      "kind": "text",
+      "label": "Small label",
+      "maxLength": 80
+    },
+    "title": {
+      "kind": "text",
+      "label": "Title",
+      "maxLength": 140
+    }
+  },
+  "defaults": {
+    "content": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "[Privacy policy text to be supplied by Sophia before launch.]"
+            }
+          ]
+        }
+      ]
+    },
+    "ground": "ink",
+    "isTitle": true,
+    "kicker": "Privacy",
+    "title": "Privacy policy"
+  },
+  "template": "<div class=\"pw pad g-{{ground}}\"><div class=\"in narrow\"><p class=\"kick rv\" data-trim>{{kicker}}</p><div class=\"rule rv\"></div>{{#if isTitle}}<h1 class=\"ttl rv\" data-trim>{{title}}</h1>{{else}}<h2 class=\"ttl rv\" data-trim>{{title}}</h2>{{/if}}<div class=\"txt rv d1\">{{rich content}}</div></div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--oxblood:#321013;--mulberry:#5E3A3C;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3,.pw ul,.pw ol,.pw li){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.narrow{max-width:1000px}\n.pad{padding:160px 0}\n.kick{margin:0;font-family:var(--label);font-weight:400;font-size:12px;line-height:18px;letter-spacing:.32em;text-transform:uppercase}\n.rule{width:64px;height:1px;background:var(--clay);border:0;margin:28px 0 32px}\n.g-ink{background:var(--ink);color:var(--bone)}.g-ink .kick{color:var(--sand)}\n.g-bone{background:var(--bone);color:var(--ink)}.g-bone .kick{color:var(--mulberry)}\n.g-stone{background:var(--stone);color:var(--ink)}.g-stone .kick{color:var(--mulberry)}.g-stone .rule{background:var(--ink)}\n.g-oxblood{background:var(--oxblood);color:var(--bone)}.g-oxblood .kick{color:var(--sand)}.g-oxblood .rule{background:var(--sand)}\n.g-clay{background:var(--clay);color:var(--bone)}.g-clay .kick{color:var(--bone)}.g-clay .rule{background:var(--bone)}\n.ttl{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;text-wrap:balance}\n.txt{margin:32px 0 0;max-width:36em}\n.txt p{margin:0 0 20px}\n.txt h2,.txt h3{font-family:var(--head);font-weight:500;font-size:30px;line-height:1.25;margin:40px 0 12px}\n.txt ul,.txt ol{margin:0 0 20px;padding-left:1.2em}\n.txt a{color:inherit;text-underline-offset:4px}\n.g-ink .txt,.g-oxblood .txt{color:var(--stone)}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.ttl{font-size:40px}.txt h2,.txt h3{font-size:24px}}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;var ch=t.charAt(0);if(cs.textTransform==='uppercase')ch=ch.toUpperCase();c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(ch).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;p.classList.add('js-rv');var els=p.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    }
+  },
+  "ai": {
+    "purpose": "Plain text page or text section.",
+    "whenToUse": "Privacy and similar pages."
+  }
+}

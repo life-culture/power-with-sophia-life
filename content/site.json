@@ -1,11 +1,42 @@
 {
-  "title": "Power With · Sophia Life",
-  "nav": [],
+  "title": "Power With",
+  "tagline": "The Foundation of Lasting Influence",
+  "nav": [
+    {
+      "type": "page",
+      "page": "pg_kpb904t192",
+      "label": "THE FRAMEWORK",
+      "anchor": "framework"
+    },
+    {
+      "type": "page",
+      "page": "pg_kpb904t192",
+      "label": "THE PRACTICE",
+      "anchor": "practice"
+    },
+    {
+      "type": "page",
+      "page": "pg_kpb904t192",
+      "label": "THE BOOK",
+      "anchor": "book"
+    },
+    {
+      "type": "button",
+      "label": "FREE DOWNLOAD",
+      "link": {
+        "type": "page",
+        "page": "pg_kpb904t192",
+        "anchor": "words"
+      },
+      "style": "primary"
+    }
+  ],
   "header": {
     "variant": "classic-left",
-    "sticky": false,
+    "sticky": true,
     "transparentOnHero": false,
-    "mobileMenu": "fullscreen"
+    "mobileMenu": "dropdown",
+    "colorTheme": "dark"
   },
   "footer": {
     "id": "sec_0a34macfbb",
@@ -16,42 +47,68 @@
         "d": [
           12
         ]
-      }
+      },
+      "blockGap": {
+        "d": 0,
+        "t": 0,
+        "m": 0
+      },
+      "width": "full"
     },
     "style": {
-      "colorTheme": "light-accent"
+      "colorTheme": "dark",
+      "padding": {
+        "d": "none",
+        "m": "none"
+      }
     },
     "blocks": [
       {
-        "id": "blk_shx9zy8m2q",
-        "type": "text",
+        "id": "blk_zxckr3t6jq",
+        "type": "component/pw2-footer",
         "v": 1,
+        "column": 0,
+        "label": "Footer",
         "fields": {
-          "content": {
-            "type": "doc",
-            "content": [
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "© 2026 Power With · Sophia Life"
-                  }
-                ]
-              }
-            ]
+          "contactLabel": "Contact",
+          "contactLink": {
+            "anchor": "join",
+            "page": "pg_kpb904t192",
+            "type": "page"
+          },
+          "copyright": "© 2026 Sophia Life",
+          "instagram": {
+            "type": "url",
+            "url": "https://www.instagram.com/sophia.life.wisdom/"
+          },
+          "name": "Power With · Sophia Life",
+          "privacyLabel": "Privacy",
+          "privacyLink": {
+            "page": "pg_es6a1j9jvq",
+            "type": "page"
+          },
+          "substack": {
+            "anchor": "essays",
+            "page": "pg_kpb904t192",
+            "type": "page"
+          },
+          "youtube": {
+            "type": "url",
+            "url": "https://www.youtube.com"
           }
         }
       }
     ]
   },
   "seo": {
-    "titleTemplate": "%s — Power With · Sophia Life"
+    "titleTemplate": "%s",
+    "description": "Power With: The Foundation of Lasting Influence, a book by Sophia Life."
   },
   "locale": "en-US",
   "integrations": {
     "analytics": false,
     "bookingUrl": null,
     "stripeConnected": false
-  }
+  },
+  "customCss": "/* Power With · site CSS. Header and the three signup forms, matched to the approved design. */\n\n/* ---------- type rendering as in the design ---------- */\nbody{text-rendering:auto}\n\n/* ---------- header ---------- */\n.os-header{background:#010A12;border-bottom:1px solid rgba(123,134,128,.35);box-shadow:none}\n.os-header.is-scrolled{box-shadow:none}\n.os-header .os-header__bar{height:68px;min-height:68px;max-inline-size:none;padding:0 28px;gap:0}\n.os-header .os-header__brand{min-height:0}\n.os-header .os-header__title,.os-header .os-menu__title{font-family:'Montserrat',sans-serif;font-weight:400;font-size:14px;line-height:1.5;letter-spacing:.32em;text-transform:uppercase;color:#EDE6D8}\n.os-header .os-nav__list{column-gap:26px}\n.os-header .os-nav .os-nav__link{font-family:'Montserrat',sans-serif;font-weight:400;font-size:12px;line-height:1.5;letter-spacing:.24em;color:#EDE6D8;padding:0}\n.os-header .os-nav .os-nav__link::after{display:none}\n.os-header .os-header__actions{margin-left:38px;gap:0}\n.os-header .os-header__actions .os-button,.os-header .os-menu__foot .os-button{min-height:0;padding:12px 44px;border:0;border-radius:0;background:#8C5B46;color:#EDE6D8;font-family:'Montserrat',sans-serif;font-weight:400;font-size:12px;line-height:1.5;letter-spacing:.24em;box-shadow:none}\n.os-header .os-button .os-button__label::after{content:none}\n.os-header .os-header__toggle{width:44px;height:44px;border-radius:0;color:#EDE6D8;background:none}\n.os-header .os-header__toggle:hover{background:none}\n.os-header .os-header__toggle .os-header__burger{display:none}\n.os-header .os-header__toggle::before{content:\"\";position:absolute;left:12px;top:15.5px;width:20px;height:1px;background:currentColor;box-shadow:0 6px 0 currentColor,0 12px 0 currentColor}\n.os-header .os-menu{background:#010A12}\n.os-header .os-menu__list .os-nav__link{font-family:'Montserrat',sans-serif;font-weight:400;font-size:12px;letter-spacing:.24em;color:#EDE6D8;padding:14px 0}\n@media (max-width:767.98px){\n  .os-header .os-header__bar{padding:0 16px}\n  .os-header .os-nav,.os-header .os-header__actions{display:none}\n  .os-header .os-header__toggle{display:inline-grid}\n}\n\n/* ---------- signup forms: shared ---------- */\n#top>.os-section__inner,#words>.os-section__inner,#join>.os-section__inner{padding-inline:0}\n[data-os-block=\"newsletter\"] .os-newsletter,[data-os-block=\"newsletter\"] .os-newsletter__form{display:block}\n[data-os-block=\"newsletter\"] .os-form__status:empty{display:none}\n[data-os-block=\"newsletter\"] p{text-wrap:wrap}\n[data-os-block=\"newsletter\"]{overflow-wrap:normal}\n[data-os-block=\"newsletter\"] .os-newsletter .os-input{box-sizing:border-box;width:100%;height:auto;border-radius:0;box-shadow:none;line-height:normal;font-family:'EB Garamond',serif;font-weight:400;font-size:19px;padding:0 18px;outline:none}\n[data-os-block=\"newsletter\"] .os-newsletter .os-button{min-height:52px;padding:0 32px;border-radius:0;box-shadow:none;font-family:'Montserrat',sans-serif;font-weight:400;font-size:12px;line-height:normal;letter-spacing:.26em;text-transform:uppercase;transition:background .45s ease,color .45s ease,border-color .45s ease;transform:none}\n[data-os-block=\"newsletter\"] .os-newsletter .os-button .os-button__label::after{content:none}\n[data-os-block=\"newsletter\"] .os-newsletter .os-button:focus-visible{outline:2px solid #8C5B46;outline-offset:3px}\n[data-os-block=\"newsletter\"] .os-newsletter__sent{margin:16px 0 0;padding:0;border:0;border-radius:0;font-size:16px;line-height:1.5}\n\n/* hero form */\n#top [data-os-block=\"newsletter\"]{box-sizing:border-box;width:100%;max-width:1000px;margin:0 auto;padding:14px 32px 120px;text-align:left;position:relative}\n#top .os-newsletter__row{display:flex;flex-wrap:wrap;gap:10px;max-width:640px}\n#top .os-newsletter__field{flex:1 1 260px;margin:0}\n#top .os-newsletter .os-input{min-height:52px;background:transparent;border:1px solid rgba(187,175,163,.6);color:#EDE6D8}\n#top .os-newsletter .os-input::placeholder{color:rgba(237,230,216,.5);opacity:1}\n#top .os-newsletter .os-input:focus{border-color:#8C5B46}\n#top .os-newsletter .os-button{flex:none;width:auto;background:transparent;border:1px solid #8C5B46;color:#EDE6D8}\n#top .os-newsletter .os-button:hover,#top .os-newsletter .os-button:focus-visible{background:#8C5B46;border-color:#8C5B46;color:#EDE6D8}\n#top .os-newsletter__note{margin:16px 0 0;font-family:'EB Garamond',serif;font-size:16px;line-height:1.5;color:#BBAFA3;max-inline-size:none}\n#top .os-newsletter__sent{color:#EDE6D8}\n#top [data-os-block=\"newsletter\"] .os-newsletter{opacity:0;transform:translateY(14px);animation:pwRise 1.6s ease 3.1s forwards}\n@keyframes pwRise{to{opacity:1;transform:none}}\n\n/* book list form, beside its text */\n#words .os-col{display:grid;grid-template-columns:7fr 5fr;column-gap:80px;row-gap:0;align-items:start;box-sizing:border-box;width:100%;max-width:1200px;margin:0 auto;padding:160px 32px}\n#words .os-newsletter__row{display:flex;flex-direction:column;gap:14px}\n#words .os-newsletter__field{display:flex;flex-direction:column;gap:14px;margin:0;flex:none}\n#words .os-newsletter .os-label{margin:0;font-family:'Montserrat',sans-serif;font-weight:400;font-size:12px;line-height:18px;letter-spacing:.22em;text-transform:uppercase;color:#5E3A3C}\n#words .os-newsletter .os-input{min-height:56px;background:#EDE6D8;border:0;border-bottom:1px solid #010A12;color:#010A12}\n#words .os-newsletter .os-input::placeholder{color:#757575;opacity:1}\n#words .os-newsletter .os-input:focus{border-bottom-color:#8C5B46}\n#words .os-newsletter .os-button{margin-top:8px;align-self:flex-start;justify-self:start;width:auto;background:#5E3A3C;border:1px solid #5E3A3C;color:#EDE6D8}\n#words .os-newsletter .os-button:hover,#words .os-newsletter .os-button:focus-visible{background:#8C5B46;border-color:#8C5B46;color:#EDE6D8}\n#words .os-newsletter__note{margin:18px 0 0;font-family:'EB Garamond',serif;font-size:16px;line-height:1.5;color:#5E3A3C;max-inline-size:none}\n#words .os-newsletter__sent{color:#5E3A3C}\n\n/* closing form on clay */\n#join .os-col{box-sizing:border-box;width:100%;max-width:1000px;margin:0 auto;padding:160px 32px 160px}\n#join .os-newsletter__row{display:flex;flex-wrap:wrap;gap:10px;max-width:640px}\n#join .os-newsletter__field{flex:1 1 260px;margin:0}\n#join .os-newsletter .os-input{min-height:52px;background:transparent;border:1px solid rgba(237,230,216,.8);color:#EDE6D8}\n#join .os-newsletter .os-input::placeholder{color:rgba(237,230,216,.75);opacity:1}\n#join .os-newsletter .os-input:focus{border-color:#010A12}\n#join .os-newsletter .os-button{flex:none;width:auto;background:transparent;border:1px solid #EDE6D8;color:#EDE6D8}\n#join .os-newsletter .os-button:hover,#join .os-newsletter .os-button:focus-visible{background:#010A12;border-color:#010A12;color:#EDE6D8}\n#join .os-newsletter__sent{color:#EDE6D8}\n\n/* reveal for the two lower forms (the sections' own script adds pw-rv) */\n.pw-rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease .24s,transform 1.3s ease .24s}\n.pw-rv.on{opacity:1;transform:none}\n\n@media (max-width:767.98px){\n  #top [data-os-block=\"newsletter\"]{padding:14px 20px 88px}\n  #top .os-newsletter__row,#join .os-newsletter__row{display:flex}\n  #top .os-newsletter .os-button,#join .os-newsletter .os-button{flex:1 1 100%;width:100%}\n  #words .os-col{grid-template-columns:1fr;row-gap:32px;padding:88px 20px}\n  #join .os-col{padding:88px 20px 88px}\n}\n@media (prefers-reduced-motion:reduce){\n  #top [data-os-block=\"newsletter\"] .os-newsletter{animation:none;opacity:1;transform:none}\n  .pw-rv{opacity:1;transform:none;transition:none}\n}\n"
 }

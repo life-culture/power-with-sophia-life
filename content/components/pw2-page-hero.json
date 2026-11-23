@@ -1,0 +1,91 @@
+{
+  "name": "pw2-page-hero",
+  "label": "Page opening (Obsidian)",
+  "description": "Opening for an inner page: optional sigil, label, line, title, lead, body, an optional list and a small label above a signup form. Add a newsletter block after it and give the section the link name top to set the form under it.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "body": {
+      "kind": "text",
+      "label": "Body",
+      "optional": true,
+      "maxLength": 600,
+      "multiline": true
+    },
+    "formFollows": {
+      "kind": "boolean",
+      "label": "A signup form follows"
+    },
+    "formLabel": {
+      "kind": "text",
+      "label": "Label above the form",
+      "optional": true,
+      "maxLength": 80
+    },
+    "items": {
+      "kind": "list",
+      "label": "List",
+      "fields": {
+        "text": {
+          "kind": "text",
+          "label": "Item",
+          "maxLength": 240
+        }
+      },
+      "min": 0,
+      "max": 8,
+      "itemLabel": "text"
+    },
+    "kicker": {
+      "kind": "text",
+      "label": "Small label",
+      "maxLength": 80
+    },
+    "lead": {
+      "kind": "text",
+      "label": "Lead",
+      "optional": true,
+      "maxLength": 300
+    },
+    "listLabel": {
+      "kind": "text",
+      "label": "Label above the list",
+      "optional": true,
+      "maxLength": 80
+    },
+    "showSigil": {
+      "kind": "boolean",
+      "label": "Show the sigil"
+    },
+    "title": {
+      "kind": "text",
+      "label": "Title",
+      "maxLength": 140
+    }
+  },
+  "defaults": {
+    "body": "Receive the full written piece, set as a PDF to read slowly and return to.",
+    "formFollows": true,
+    "formLabel": "Send it to my inbox",
+    "items": [],
+    "kicker": "Free · From Sophia Life",
+    "lead": "Power With began as a book and became a performance.",
+    "showSigil": true,
+    "title": "Keep the words."
+  },
+  "template": "<div class=\"pw hero\" data-form=\"{{formFollows}}\"><div class=\"in narrow\">{{#if showSigil}}<svg class=\"sigil\" viewBox=\"17.5 11.5 85 57\" aria-hidden=\"true\"><circle cx=\"46\" cy=\"40\" r=\"28\"></circle><circle cx=\"74\" cy=\"40\" r=\"28\"></circle></svg>{{/if}}<p class=\"kick rv\" data-trim>{{kicker}}</p><div class=\"rule rv\"></div><h1 class=\"rv\" data-trim>{{title}}</h1>{{#if lead}}<p class=\"lead rv d1\">{{lead}}</p>{{/if}}{{#if body}}<p class=\"body rv d1\">{{body}}</p>{{/if}}{{#if items}}<div class=\"list rv d2\">{{#if listLabel}}<p class=\"kick\">{{listLabel}}</p>{{/if}}<ul>{{#each items}}<li>{{text}}</li>{{/each}}</ul></div>{{/if}}{{#if formLabel}}<p class=\"fl rv d2\">{{formLabel}}</p>{{/if}}</div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--oxblood:#321013;--mulberry:#5E3A3C;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3,.pw ul,.pw ol,.pw li){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.narrow{max-width:1000px}\n.pad{padding:160px 0}\n.kick{margin:0;font-family:var(--label);font-weight:400;font-size:12px;line-height:18px;letter-spacing:.32em;text-transform:uppercase}\n.rule{width:64px;height:1px;background:var(--clay);border:0;margin:28px 0 32px}\n.pw h2{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;text-wrap:balance}\n.intro{margin:24px 0 0;max-width:36em}\n.close{font-family:var(--head);font-style:italic;font-weight:500;font-size:34px;line-height:1.2;margin:72px 0 0}\n.g-ink{background:var(--ink);color:var(--bone)}.g-ink .kick{color:var(--sand)}\n.g-bone{background:var(--bone);color:var(--ink)}.g-bone .kick{color:var(--mulberry)}\n.g-stone{background:var(--stone);color:var(--ink)}.g-stone .kick{color:var(--mulberry)}.g-stone .rule{background:var(--ink)}\n.g-oxblood{background:var(--oxblood);color:var(--bone)}.g-oxblood .kick{color:var(--sand)}.g-oxblood .rule{background:var(--sand)}\n.g-clay{background:var(--clay);color:var(--bone)}.g-clay .kick{color:var(--bone)}.g-clay .rule{background:var(--bone)}\n.hero{background:var(--ink);color:var(--bone);padding:160px 0}\n.hero[data-form=true]{padding-bottom:0}\n.hero:before{content:\"\";position:absolute;inset:0;background:radial-gradient(55% 45% at 50% 20%,rgba(140,91,70,.16),rgba(1,10,18,0) 70%);pointer-events:none}\n.hero[data-form=true]:before{bottom:-226px}\n.hero .in{position:relative;z-index:1}\n.hero .kick{color:var(--sand)}\n.sigil{display:block;width:180px;height:auto;margin:0 0 56px;overflow:visible}\n.sigil circle{fill:none;stroke:var(--gilt);stroke-width:.7}\n.hero h1{font-family:var(--head);font-weight:500;font-size:68px;line-height:1.04;letter-spacing:0;text-wrap:balance}\n.lead{margin:28px 0 0;font-family:var(--head);font-weight:500;font-size:32px;line-height:1.3;max-width:24em;text-wrap:balance}\n.body{margin:24px 0 0;max-width:36em;color:var(--stone)}\n.list{margin:48px 0 0;max-width:36em}\n.list ul{list-style:none;margin:16px 0 0}\n.list li{position:relative;padding:14px 0 14px 32px;border-top:1px solid rgba(187,175,163,.3);color:var(--stone)}\n.list li:before{content:\"\";position:absolute;left:0;top:30px;width:16px;height:1px;background:var(--clay)}\n.fl{margin:48px 0 0;font-family:var(--label);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--sand)}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.pw h2{font-size:40px}.close{font-size:27px;margin-top:44px}.hero{padding:88px 0}.hero[data-form=true]{padding-bottom:0}.hero[data-form=true]:before{bottom:-280px}.sigil{width:120px;margin-bottom:40px}.hero h1{font-size:44px}.lead{font-size:25px}}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}.js-rv .d2{transition-delay:.24s}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;var ch=t.charAt(0);if(cs.textTransform==='uppercase')ch=ch.toUpperCase();c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(ch).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;var col=root.closest('.os-col');var nl=col?col.querySelector('.os-block--newsletter'):null;if(nl){nl.classList.add('pw-rv');}p.classList.add('js-rv');var els=[].slice.call(p.querySelectorAll('.rv'));if(nl)els.push(nl);if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    },
+    "colorTheme": "dark"
+  },
+  "ai": {
+    "purpose": "Opening of an inner page.",
+    "whenToUse": "First section of The Book, Spoken Word, Introduction and Thank you pages."
+  }
+}

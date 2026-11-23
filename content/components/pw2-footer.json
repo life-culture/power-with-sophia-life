@@ -1,0 +1,92 @@
+{
+  "name": "pw2-footer",
+  "label": "Footer",
+  "description": "Name, contact link, Instagram, YouTube and Substack icons, copyright and privacy link.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "contactLabel": {
+      "kind": "text",
+      "label": "Contact text",
+      "maxLength": 30
+    },
+    "contactLink": {
+      "kind": "link",
+      "label": "Contact link"
+    },
+    "copyright": {
+      "kind": "text",
+      "label": "Copyright",
+      "maxLength": 80
+    },
+    "instagram": {
+      "kind": "link",
+      "label": "Instagram link",
+      "optional": true
+    },
+    "name": {
+      "kind": "text",
+      "label": "Name line",
+      "maxLength": 80
+    },
+    "privacyLabel": {
+      "kind": "text",
+      "label": "Privacy text",
+      "maxLength": 30
+    },
+    "privacyLink": {
+      "kind": "link",
+      "label": "Privacy link"
+    },
+    "substack": {
+      "kind": "link",
+      "label": "Substack link",
+      "optional": true
+    },
+    "youtube": {
+      "kind": "link",
+      "label": "YouTube link",
+      "optional": true
+    }
+  },
+  "defaults": {
+    "contactLabel": "Contact",
+    "contactLink": {
+      "email": "hello@example.com",
+      "type": "email"
+    },
+    "copyright": "© 2026 Sophia Life",
+    "instagram": {
+      "type": "url",
+      "url": "https://www.instagram.com/sophia.life.wisdom/"
+    },
+    "name": "Power With · Sophia Life",
+    "privacyLabel": "Privacy",
+    "privacyLink": {
+      "type": "url",
+      "url": "/privacy/"
+    },
+    "substack": {
+      "type": "url",
+      "url": "https://substack.com"
+    },
+    "youtube": {
+      "type": "url",
+      "url": "https://www.youtube.com"
+    }
+  },
+  "template": "<div class=\"pw\"><div class=\"in\"><div>{{name}}</div><div class=\"links\"><a href=\"{{href contactLink}}\">{{contactLabel}}</a><span class=\"icons\">{{#if instagram}}<a href=\"{{href instagram}}\" aria-label=\"Instagram\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"></rect><circle cx=\"12\" cy=\"12\" r=\"4.2\"></circle><circle cx=\"17.4\" cy=\"6.6\" r=\".9\" class=\"f\"></circle></svg></a>{{/if}}{{#if youtube}}<a href=\"{{href youtube}}\" aria-label=\"YouTube\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"2.5\" y=\"5.5\" width=\"19\" height=\"13\" rx=\"4\"></rect><path d=\"M10 9.2v5.6l4.8-2.8z\" class=\"f\"></path></svg></a>{{/if}}{{#if substack}}<a href=\"{{href substack}}\" aria-label=\"Substack\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 4h14M5 7.5h14M5 11h14v9l-7-3.8L5 20z\"></path></svg></a>{{/if}}</span></div><div class=\"r\">{{copyright}} · <a href=\"{{href privacyLink}}\">{{privacyLabel}}</a></div></div></div>",
+  "css": ":scope{display:block;width:100%}\n:where(.pw p,.pw h1,.pw h2,.pw h3){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--oxblood:#321013;--mulberry:#5E3A3C;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;background:var(--ink);color:var(--sand);padding:64px 0;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;-webkit-font-smoothing:antialiased;text-align:left}\n.pw *{box-sizing:border-box}\n.in{max-width:1200px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;font-family:var(--label);font-size:12px;letter-spacing:.24em;text-transform:uppercase}\n.links{display:flex;gap:10px 22px;flex-wrap:wrap;justify-content:center;align-items:center}\n.links a{color:var(--stone);text-decoration:underline;text-underline-offset:4px}\n.r{text-align:right}\n.r a{color:var(--sand);text-decoration:underline;text-underline-offset:4px}\n.icons{display:inline-flex;gap:18px;margin-left:14px;align-items:center}\n.icons a{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;text-decoration:none;color:var(--stone);transition:color .3s}\n.icons a:hover{color:var(--clay)}\n.icons svg{width:22px;height:22px}\n.icons svg *{fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}\n.icons svg .f{fill:currentColor;stroke:none}\n@media (max-width:767px){.in{padding:0 20px;grid-template-columns:1fr;text-align:left}.links{justify-content:flex-start}.r{text-align:left}}\n@media (prefers-reduced-motion:reduce){.icons a{transition:none}}",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    },
+    "colorTheme": "dark"
+  },
+  "ai": {
+    "purpose": "Site footer.",
+    "whenToUse": "In the footer section."
+  }
+}

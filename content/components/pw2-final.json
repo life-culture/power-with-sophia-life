@@ -1,0 +1,39 @@
+{
+  "name": "pw2-final",
+  "label": "Closing invitation (clay)",
+  "description": "Italic headline and one line. Place a newsletter block after it in the same section.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "headline": {
+      "kind": "text",
+      "label": "Headline",
+      "maxLength": 140
+    },
+    "line": {
+      "kind": "text",
+      "label": "Line under the headline",
+      "optional": true,
+      "maxLength": 240
+    }
+  },
+  "defaults": {
+    "headline": "Influence that keeps the relationship intact.",
+    "line": "Leave your email to find out when the book launches and when to get a copy."
+  },
+  "template": "<div class=\"pw\"><h2 class=\"rv\" data-trim>{{headline}}</h2>{{#if line}}<p class=\"line rv d1\">{{line}}</p>{{/if}}</div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--oxblood:#321013;--mulberry:#5E3A3C;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left;color:var(--bone)}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.pw h2{font-family:var(--head);font-style:italic;font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;margin:0;text-wrap:balance;text-indent:-.0167em;color:var(--bone)}\n.line{margin:24px 0 40px}\n@media (max-width:767px){.pw{font-size:19px}.pw h2{font-size:40px}}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}\n.js-rv .d2{transition-delay:.24s}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;var ch=t.charAt(0);if(cs.textTransform==='uppercase')ch=ch.toUpperCase();c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(ch).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;var col=root.closest('.os-col');var nl=col?col.querySelector('.os-block--newsletter'):null;if(nl){nl.classList.add('pw-rv');}p.classList.add('js-rv');var els=[].slice.call(p.querySelectorAll('.rv'));if(nl)els.push(nl);if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    },
+    "colorTheme": "brand"
+  },
+  "ai": {
+    "purpose": "Closing invitation before the footer.",
+    "whenToUse": "End of the home page, with a newsletter block after it."
+  }
+}

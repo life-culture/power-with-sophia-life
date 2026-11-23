@@ -1,0 +1,69 @@
+{
+  "id": "pg_es6a1j9jvq",
+  "title": "Privacy",
+  "slug": "privacy",
+  "seo": {
+    "description": "How Power With and Sophia Life handle the information you share."
+  },
+  "hidden": true,
+  "sections": [
+    {
+      "id": "sec_kcgs7xw2s4",
+      "preset": "component/pw2-text@1",
+      "label": "Text page",
+      "anchor": "privacy",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_yp1dacvzk3",
+          "type": "component/pw2-text",
+          "v": 1,
+          "fields": {
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "[Privacy policy text to be supplied by Sophia before launch.]"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "This site collects your first name and email address when you ask for the poem, the Introduction or news of the book. Your details go to the email platform Sophia uses to send her letters. You can unsubscribe from any email at any time."
+                    }
+                  ]
+                }
+              ]
+            },
+            "ground": "ink",
+            "isTitle": true,
+            "kicker": "Privacy",
+            "title": "Privacy policy"
+          }
+        }
+      ]
+    }
+  ]
+}

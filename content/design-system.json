@@ -1,5 +1,15 @@
 {
   "version": 1,
+  "brief": {
+    "about": "The book website for Power With: The Foundation of Lasting Influence, by Sophia Life. Publishing January 2027.",
+    "audience": "Leaders and the people who love them. Visitors join the list to hear when the book launches and receive the poem Power With, America.",
+    "feeling": [
+      "grounded",
+      "spacious",
+      "warm"
+    ],
+    "notes": "Pixel-perfect rebuild of the approved local HTML design (edit 11). Label font Montserrat. Pages to follow: The Book, Spoken Word landing, Thank you, Introduction (hidden), Privacy."
+  },
   "brand": {
     "name": "Power With · Sophia Life"
   },
@@ -25,15 +35,5 @@
       "at": "2026-11-23T01:01:54.969Z"
     }
   ],
-  "updatedAt": "2026-11-23T01:01:54.969Z",
-  "brief": {
-    "about": "The book website for Power With: The Foundation of Lasting Influence, by Sophia Life. Publishing January 2027.",
-    "audience": "Leaders and the people who love them. Visitors join the list to hear when the book launches and receive the poem Power With, America.",
-    "feeling": [
-      "grounded",
-      "spacious",
-      "warm"
-    ],
-    "notes": "Pixel-perfect rebuild of the approved local HTML design (edit 11). Label font Montserrat. Pages to follow: The Book, Spoken Word landing, Thank you, Introduction (hidden), Privacy."
-  }
+  "updatedAt": "2026-11-23T01:01:54.969Z"
 }

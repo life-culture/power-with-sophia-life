@@ -1,0 +1,91 @@
+{
+  "name": "pw2-faq",
+  "label": "Questions",
+  "description": "Label, line, headline and a two-column grid of questions and answers.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "ground": {
+      "kind": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "ink",
+          "label": "Obsidian"
+        },
+        {
+          "value": "bone",
+          "label": "Bone"
+        },
+        {
+          "value": "stone",
+          "label": "Stone"
+        },
+        {
+          "value": "oxblood",
+          "label": "Oxblood"
+        },
+        {
+          "value": "clay",
+          "label": "Clay"
+        }
+      ]
+    },
+    "headline": {
+      "kind": "text",
+      "label": "Headline",
+      "optional": true,
+      "maxLength": 140
+    },
+    "items": {
+      "kind": "list",
+      "label": "Questions",
+      "fields": {
+        "answer": {
+          "kind": "text",
+          "label": "Answer",
+          "maxLength": 600,
+          "multiline": true
+        },
+        "question": {
+          "kind": "text",
+          "label": "Question",
+          "maxLength": 160
+        }
+      },
+      "min": 1,
+      "max": 12,
+      "itemLabel": "question"
+    },
+    "kicker": {
+      "kind": "text",
+      "label": "Small label",
+      "maxLength": 80
+    }
+  },
+  "defaults": {
+    "ground": "ink",
+    "headline": "Before you order.",
+    "items": [
+      {
+        "answer": "January 2027, in the second week. [Exact date to confirm.] Join the release list to hear the day it opens.",
+        "question": "When is the book released?"
+      }
+    ],
+    "kicker": "Questions"
+  },
+  "template": "<div class=\"pw pad g-{{ground}}\"><div class=\"in\"><p class=\"kick rv\" data-trim>{{kicker}}</p><div class=\"rule rv\"></div>{{#if headline}}<h2 class=\"rv\" data-trim>{{headline}}</h2>{{/if}}<div class=\"qa rv d1\">{{#each items}}<div class=\"q\"><h3>{{question}}</h3><p>{{answer}}</p></div>{{/each}}</div></div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--oxblood:#321013;--mulberry:#5E3A3C;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3,.pw ul,.pw ol,.pw li){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.narrow{max-width:1000px}\n.pad{padding:160px 0}\n.kick{margin:0;font-family:var(--label);font-weight:400;font-size:12px;line-height:18px;letter-spacing:.32em;text-transform:uppercase}\n.rule{width:64px;height:1px;background:var(--clay);border:0;margin:28px 0 32px}\n.pw h2{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;text-wrap:balance}\n.intro{margin:24px 0 0;max-width:36em}\n.close{font-family:var(--head);font-style:italic;font-weight:500;font-size:34px;line-height:1.2;margin:72px 0 0}\n.g-ink{background:var(--ink);color:var(--bone)}.g-ink .kick{color:var(--sand)}\n.g-bone{background:var(--bone);color:var(--ink)}.g-bone .kick{color:var(--mulberry)}\n.g-stone{background:var(--stone);color:var(--ink)}.g-stone .kick{color:var(--mulberry)}.g-stone .rule{background:var(--ink)}\n.g-oxblood{background:var(--oxblood);color:var(--bone)}.g-oxblood .kick{color:var(--sand)}.g-oxblood .rule{background:var(--sand)}\n.g-clay{background:var(--clay);color:var(--bone)}.g-clay .kick{color:var(--bone)}.g-clay .rule{background:var(--bone)}\n.qa{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px;margin-top:56px}\n.q{padding:28px 0;border-top:1px solid rgba(187,175,163,.35)}\n.g-bone .q,.g-stone .q{border-top-color:var(--sand)}\n.q h3{font-family:var(--head);font-weight:500;font-size:27px;line-height:1.25}\n.q p{margin:12px 0 0}\n.g-ink .q p,.g-oxblood .q p{color:var(--stone)}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.pw h2{font-size:40px}.close{font-size:27px;margin-top:44px}.qa{grid-template-columns:1fr;margin-top:40px}.q h3{font-size:23px}}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}.js-rv .d2{transition-delay:.24s}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;var ch=t.charAt(0);if(cs.textTransform==='uppercase')ch=ch.toUpperCase();c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(ch).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;var col=root.closest('.os-col');var nl=col?col.querySelector('.os-block--newsletter'):null;if(nl){nl.classList.add('pw-rv');}p.classList.add('js-rv');var els=[].slice.call(p.querySelectorAll('.rv'));if(nl)els.push(nl);if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    }
+  },
+  "ai": {
+    "purpose": "Questions and answers.",
+    "whenToUse": "The Book page."
+  }
+}

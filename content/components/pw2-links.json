@@ -1,0 +1,102 @@
+{
+  "name": "pw2-links",
+  "label": "Link blocks",
+  "description": "One to three blocks side by side, each with a label, headline, short text and a thin-frame button.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "blocks": {
+      "kind": "list",
+      "label": "Blocks",
+      "fields": {
+        "body": {
+          "kind": "text",
+          "label": "Text",
+          "optional": true,
+          "maxLength": 400,
+          "multiline": true
+        },
+        "buttonLabel": {
+          "kind": "text",
+          "label": "Button text",
+          "optional": true,
+          "maxLength": 40
+        },
+        "buttonLink": {
+          "kind": "link",
+          "label": "Button link",
+          "optional": true
+        },
+        "headline": {
+          "kind": "text",
+          "label": "Headline",
+          "maxLength": 120
+        },
+        "label": {
+          "kind": "text",
+          "label": "Small label",
+          "maxLength": 60
+        }
+      },
+      "min": 1,
+      "max": 3,
+      "itemLabel": "headline"
+    },
+    "ground": {
+      "kind": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "ink",
+          "label": "Obsidian"
+        },
+        {
+          "value": "bone",
+          "label": "Bone"
+        },
+        {
+          "value": "stone",
+          "label": "Stone"
+        },
+        {
+          "value": "oxblood",
+          "label": "Oxblood"
+        },
+        {
+          "value": "clay",
+          "label": "Clay"
+        }
+      ]
+    }
+  },
+  "defaults": {
+    "blocks": [
+      {
+        "body": "Give them the book, and keep a copy for yourself.",
+        "buttonLabel": "Send a copy",
+        "buttonLink": {
+          "anchor": "book",
+          "page": "pg_kpb904t192",
+          "type": "page"
+        },
+        "headline": "For the leader in your life.",
+        "label": "Give this book"
+      }
+    ],
+    "ground": "stone"
+  },
+  "template": "<div class=\"pw pad g-{{ground}}\"><div class=\"in\"><div class=\"cols rv\">{{#each blocks}}<div class=\"blk\"><p class=\"kick\">{{label}}</p><div class=\"rule\"></div><h2>{{headline}}</h2>{{#if body}}<p class=\"b\">{{body}}</p>{{/if}}{{#if buttonLabel}}<a class=\"btn\" href=\"{{href buttonLink}}\">{{buttonLabel}}</a>{{/if}}</div>{{/each}}</div></div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--oxblood:#321013;--mulberry:#5E3A3C;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3,.pw ul,.pw ol,.pw li){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.narrow{max-width:1000px}\n.pad{padding:160px 0}\n.kick{margin:0;font-family:var(--label);font-weight:400;font-size:12px;line-height:18px;letter-spacing:.32em;text-transform:uppercase}\n.rule{width:64px;height:1px;background:var(--clay);border:0;margin:28px 0 32px}\n.pw h2{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;text-wrap:balance}\n.g-ink{background:var(--ink);color:var(--bone)}.g-ink .kick{color:var(--sand)}\n.g-bone{background:var(--bone);color:var(--ink)}.g-bone .kick{color:var(--mulberry)}\n.g-stone{background:var(--stone);color:var(--ink)}.g-stone .kick{color:var(--mulberry)}.g-stone .rule{background:var(--ink)}\n.g-oxblood{background:var(--oxblood);color:var(--bone)}.g-oxblood .kick{color:var(--sand)}.g-oxblood .rule{background:var(--sand)}\n.g-clay{background:var(--clay);color:var(--bone)}.g-clay .kick{color:var(--bone)}.g-clay .rule{background:var(--bone)}\n.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:64px 80px}\n.blk h2{font-size:44px;line-height:1.1}\n.b{margin:20px 0 0;max-width:30em}\n.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;margin-top:36px;padding:0 32px;font-family:var(--label);font-weight:400;font-size:12px;line-height:1.5;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;color:inherit;background:transparent;transition:background .45s ease,color .45s ease,border-color .45s ease}\n.g-bone .btn,.g-stone .btn{border-color:var(--ink)}\n.g-bone .btn:hover,.g-stone .btn:hover,.g-bone .btn:focus-visible,.g-stone .btn:focus-visible{background:var(--ink);color:var(--bone)}\n.g-ink .btn,.g-oxblood .btn{border-color:var(--clay);color:var(--bone)}\n.g-ink .btn:hover,.g-oxblood .btn:hover,.g-ink .btn:focus-visible,.g-oxblood .btn:focus-visible{background:var(--clay)}\n.g-clay .btn{border-color:var(--bone);color:var(--bone)}\n.g-clay .btn:hover,.g-clay .btn:focus-visible{background:var(--ink);border-color:var(--ink)}\n.btn:focus-visible{outline:2px solid var(--clay);outline-offset:3px}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.pw h2{font-size:40px}.blk h2{font-size:34px}}\n@media (prefers-reduced-motion:reduce){.btn{transition:none}}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;if(ctx.reducedMotion)return;p.classList.add('js-rv');var els=p.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    }
+  },
+  "ai": {
+    "purpose": "Short blocks that each lead somewhere.",
+    "whenToUse": "Inner pages."
+  }
+}

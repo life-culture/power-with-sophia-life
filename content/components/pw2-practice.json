@@ -1,0 +1,185 @@
+{
+  "name": "pw2-practice",
+  "label": "The Practice (ten principles)",
+  "description": "Label, line, headline, introduction, a grid of principles (icon, number and name, one line) and an italic closing line.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "closing": {
+      "kind": "text",
+      "label": "Italic closing line",
+      "optional": true,
+      "maxLength": 200
+    },
+    "headline": {
+      "kind": "text",
+      "label": "Headline",
+      "maxLength": 140
+    },
+    "intro": {
+      "kind": "text",
+      "label": "Introduction",
+      "optional": true,
+      "maxLength": 400,
+      "multiline": true
+    },
+    "items": {
+      "kind": "list",
+      "label": "Principles",
+      "fields": {
+        "icon": {
+          "kind": "select",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "i1",
+              "label": "01 Waves"
+            },
+            {
+              "value": "i2",
+              "label": "02 Overlap with small circle"
+            },
+            {
+              "value": "i3",
+              "label": "03 Arcs"
+            },
+            {
+              "value": "i4",
+              "label": "04 Circle over a line"
+            },
+            {
+              "value": "i5",
+              "label": "05 Eye"
+            },
+            {
+              "value": "i6",
+              "label": "06 Three circles"
+            },
+            {
+              "value": "i7",
+              "label": "07 Split circle"
+            },
+            {
+              "value": "i8",
+              "label": "08 Two linked rings"
+            },
+            {
+              "value": "i9",
+              "label": "09 Circle and spiral"
+            },
+            {
+              "value": "i10",
+              "label": "10 Return arrow"
+            }
+          ],
+          "display": "dropdown"
+        },
+        "line": {
+          "kind": "text",
+          "label": "One line",
+          "maxLength": 140
+        },
+        "name": {
+          "kind": "text",
+          "label": "Name",
+          "maxLength": 40
+        },
+        "number": {
+          "kind": "text",
+          "label": "Number",
+          "maxLength": 4
+        }
+      },
+      "min": 1,
+      "max": 12,
+      "itemLabel": "name"
+    },
+    "kicker": {
+      "kind": "text",
+      "label": "Small label",
+      "maxLength": 60
+    }
+  },
+  "defaults": {
+    "closing": "Each return is the practice.",
+    "headline": "10 principles make power with possible.",
+    "intro": "Each principle is a practice. Each one closes with a single action you can begin today. Together they build the capacity to stay connected under pressure.",
+    "items": [
+      {
+        "icon": "i1",
+        "line": "Staying present through discomfort.",
+        "name": "Emotional regulation",
+        "number": "01"
+      },
+      {
+        "icon": "i2",
+        "line": "Prioritizing another's experience when it matters most.",
+        "name": "Empathy",
+        "number": "02"
+      },
+      {
+        "icon": "i3",
+        "line": "Receiving another person's world.",
+        "name": "Listening",
+        "number": "03"
+      },
+      {
+        "icon": "i4",
+        "line": "Remaining teachable while staying yourself.",
+        "name": "Humility",
+        "number": "04"
+      },
+      {
+        "icon": "i5",
+        "line": "Holding more than one perspective.",
+        "name": "Understanding",
+        "number": "05"
+      },
+      {
+        "icon": "i6",
+        "line": "Transforming control into connection.",
+        "name": "Relationality",
+        "number": "06"
+      },
+      {
+        "icon": "i7",
+        "line": "Aligning word, action and energy.",
+        "name": "Integrity",
+        "number": "07"
+      },
+      {
+        "icon": "i8",
+        "line": "Building safety through consistency, transparency and care.",
+        "name": "Trust",
+        "number": "08"
+      },
+      {
+        "icon": "i9",
+        "line": "Owning your impact.",
+        "name": "Responsibility",
+        "number": "09"
+      },
+      {
+        "icon": "i10",
+        "line": "Coming back.",
+        "name": "Repair",
+        "number": "10"
+      }
+    ],
+    "kicker": "The practice"
+  },
+  "template": "<div class=\"pw pad\"><div class=\"in\"><p class=\"kick rv\" data-trim>{{kicker}}</p><div class=\"rule rv\"></div><h2 class=\"rv\" data-trim>{{headline}}</h2>{{#if intro}}<p class=\"intro rv d1\">{{intro}}</p>{{/if}}<div class=\"grid5\">{{#each items}}<div class=\"pr rv\"><div class=\"ic\" data-icon=\"{{icon}}\"><svg class=\"i1\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M8 16 Q16 8 24 16 T40 16\"></path><path d=\"M8 26 Q16 21 24 26 T40 26\"></path><line x1=\"8\" y1=\"36\" x2=\"40\" y2=\"36\"></line></svg><svg class=\"i2\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"19\" cy=\"24\" r=\"10\"></circle><circle cx=\"29\" cy=\"24\" r=\"10\"></circle><circle cx=\"24\" cy=\"24\" r=\"2.5\"></circle></svg><svg class=\"i3\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M22 13 A11 11 0 1 0 22 35\"></path><path d=\"M29 18 Q33 24 29 30\"></path><path d=\"M35 14 Q41 24 35 34\"></path></svg><svg class=\"i4\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"24\" r=\"10\"></circle><line x1=\"8\" y1=\"34\" x2=\"40\" y2=\"34\"></line></svg><svg class=\"i5\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M8 24 Q24 10 40 24 Q24 38 8 24 Z\"></path><circle cx=\"24\" cy=\"24\" r=\"4\"></circle></svg><svg class=\"i6\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"19\" cy=\"20\" r=\"9\"></circle><circle cx=\"29\" cy=\"20\" r=\"9\"></circle><circle cx=\"24\" cy=\"29\" r=\"9\"></circle></svg><svg class=\"i7\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"24\" r=\"12\"></circle><line x1=\"24\" y1=\"12\" x2=\"24\" y2=\"36\"></line></svg><svg class=\"i8\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"24\" r=\"9\"></circle><circle cx=\"30\" cy=\"24\" r=\"9\"></circle></svg><svg class=\"i9\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle class=\"dot\" cx=\"24\" cy=\"24\" r=\"1.8\"></circle><circle cx=\"24\" cy=\"24\" r=\"8\"></circle><path d=\"M24 8 A16 16 0 1 1 10 32\"></path></svg><svg class=\"i10\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M31 13 A12 12 0 1 0 36 25\"></path><path d=\"M31 13 Q39 15 36 25\"></path><line x1=\"32\" y1=\"16\" x2=\"36\" y2=\"15\"></line><line x1=\"34\" y1=\"21\" x2=\"38\" y2=\"21\"></line></svg></div><p class=\"nm\">{{number}} {{name}}</p><p class=\"ln\">{{line}}</p></div>{{/each}}</div>{{#if closing}}<p class=\"close rv\">{{closing}}</p>{{/if}}</div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--sand:#BBAFA3;--mulberry:#5E3A3C;--clay:#8C5B46;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left;background:var(--bone);color:var(--ink)}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.pad{padding:160px 0}\n.kick{margin:0;font-family:var(--label);font-weight:400;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--mulberry)}\n.rule{width:64px;height:1px;background:var(--clay);border:0;margin:28px 0 32px}\n.pw h2{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;margin:0;text-wrap:balance;text-indent:-.0333em}\n.intro{margin:24px 0 0;max-width:36em}\n.close{font-family:var(--head);font-style:italic;font-weight:500;font-size:34px;line-height:1.2;margin:72px 0 0}\n.grid5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:48px 32px;margin-top:72px}\n.pr{border-top:1px solid var(--sand);padding-top:24px}\n.pr .ic{color:var(--mulberry);line-height:0}\n.pr .ic svg{display:none}\n.pr .ic[data-icon=i1] .i1,.pr .ic[data-icon=i2] .i2,.pr .ic[data-icon=i3] .i3,.pr .ic[data-icon=i4] .i4,.pr .ic[data-icon=i5] .i5,.pr .ic[data-icon=i6] .i6,.pr .ic[data-icon=i7] .i7,.pr .ic[data-icon=i8] .i8,.pr .ic[data-icon=i9] .i9,.pr .ic[data-icon=i10] .i10{display:block}\n.pr .ic svg *{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}\n.pr .ic svg .dot{fill:currentColor}\n.pr .nm{margin:18px 0 0;font-family:var(--label);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mulberry)}\n.pr .ln{margin:8px 0 0}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}\n@media (max-width:1199px){.grid5{grid-template-columns:repeat(3,minmax(0,1fr))}}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.pw h2{font-size:40px}.close{font-size:27px;margin-top:44px}.grid5{grid-template-columns:1fr;gap:28px;margin-top:40px}.pr{display:grid;grid-template-columns:48px 1fr;column-gap:20px}.pr .ic{grid-row:span 2}.pr .nm{margin-top:4px}}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;var ch=t.charAt(0);if(cs.textTransform==='uppercase')ch=ch.toUpperCase();c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(ch).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;p.classList.add('js-rv');var els=p.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    }
+  },
+  "ai": {
+    "purpose": "The ten principles.",
+    "whenToUse": "Home page."
+  }
+}

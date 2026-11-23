@@ -1,0 +1,61 @@
+{
+  "name": "pw2-performance",
+  "label": "Spoken Aloud (performance video)",
+  "description": "Label, line, headline and subline, then a framed video poster with a play button that opens the performance.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "caption": {
+      "kind": "text",
+      "label": "Caption under the video",
+      "optional": true,
+      "maxLength": 200
+    },
+    "headline": {
+      "kind": "text",
+      "label": "Headline",
+      "maxLength": 140
+    },
+    "kicker": {
+      "kind": "text",
+      "label": "Small label",
+      "maxLength": 60
+    },
+    "poster": {
+      "kind": "image",
+      "label": "Poster image (optional)",
+      "optional": true
+    },
+    "subline": {
+      "kind": "text",
+      "label": "Line under the headline",
+      "optional": true,
+      "maxLength": 200
+    },
+    "videoLink": {
+      "kind": "link",
+      "label": "Video link (YouTube)",
+      "optional": true
+    }
+  },
+  "defaults": {
+    "caption": "[YouTube link for the INC performance goes here]",
+    "headline": "Power With, America",
+    "kicker": "Spoken aloud",
+    "subline": "An artistic keynote for an influential audience."
+  },
+  "template": "<div class=\"pw pad\"><div class=\"in narrow\"><p class=\"kick rv\" data-trim>{{kicker}}</p><div class=\"rule rv\"></div><h2 class=\"rv\" data-trim>{{headline}}</h2>{{#if subline}}<p class=\"subline rv d1\" data-trim>{{subline}}</p>{{/if}}<div class=\"frame rv d2\">{{#if poster}}<div class=\"poster\">{{image poster sizes=\"(max-width: 767px) 100vw, 936px\"}}</div>{{/if}}{{#if videoLink}}<a class=\"play\" href=\"{{href videoLink}}\" aria-label=\"Play the performance\"></a>{{else}}<span class=\"play\" aria-hidden=\"true\"></span>{{/if}}{{#if caption}}<span class=\"cap\">{{caption}}</span>{{/if}}</div></div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--clay:#8C5B46;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left;background:var(--ink);color:var(--bone)}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.narrow{max-width:1000px}\n.pad{padding:160px 0}\n.kick{margin:0;font-family:var(--label);font-weight:400;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--sand)}\n.rule{width:64px;height:1px;background:var(--clay);border:0;margin:28px 0 32px}\n.pw h2{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;margin:0;text-wrap:balance;text-indent:-.0333em}\n.subline{margin:24px 0 56px;font-family:var(--head);font-weight:500;font-size:28px;color:var(--stone);text-indent:.0357em}\n.frame{position:relative;margin:0;aspect-ratio:16/9;border:1px solid rgba(140,91,70,.7);background:radial-gradient(55% 65% at 50% 50%,rgba(140,91,70,.3),rgba(1,10,18,.95)),var(--ink);display:flex;align-items:center;justify-content:center}\n.frame:before{content:\"\";position:absolute;inset:10px;border:1px solid rgba(140,91,70,.25);z-index:1;pointer-events:none}\n.poster{position:absolute;inset:0;overflow:hidden}\n.poster .os-img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;padding:0;border:0;background:none}\n.poster img{width:100%;height:100%;object-fit:cover;display:block;max-width:none}\n.play{position:relative;z-index:2;width:88px;height:88px;border:1px solid var(--clay);border-radius:50%;display:flex;align-items:center;justify-content:center;background:none;cursor:pointer;transition:background .4s;text-decoration:none}\n.play:hover{background:rgba(140,91,70,.18)}\n.play:after{content:\"\";border-left:16px solid var(--clay);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}\n.play:focus-visible{outline:2px solid var(--clay);outline-offset:3px}\n.cap{position:absolute;bottom:-34px;left:0;right:0;text-align:center;font-size:16px;color:var(--sand)}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}\n.js-rv .d2{transition-delay:.24s}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.pw h2{font-size:40px}.subline{font-size:22px;margin-bottom:40px}}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;var ch=t.charAt(0);if(cs.textTransform==='uppercase')ch=ch.toUpperCase();c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(ch).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;p.classList.add('js-rv');var els=p.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    }
+  },
+  "ai": {
+    "purpose": "The spoken word performance.",
+    "whenToUse": "Home page."
+  }
+}

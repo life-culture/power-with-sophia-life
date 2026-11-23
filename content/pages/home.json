@@ -1,45 +1,629 @@
 {
   "id": "pg_kpb904t192",
-  "title": "/",
+  "title": "Home",
   "slug": "",
+  "seo": {
+    "title": "Power With · A book by Sophia Life",
+    "description": "Power With: The Foundation of Lasting Influence, a book by Sophia Life. Get on the list to hear when the book launches."
+  },
   "sections": [
     {
-      "id": "sec_eenxfzz6jb",
+      "id": "sec_gtvjwnbxza",
+      "preset": "component/pw2-hero@1",
+      "label": "Hero: sigil, title and lead",
+      "anchor": "top",
       "layout": {
         "mode": "stack",
         "columns": {
           "d": [
             12
           ]
-        }
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
       },
       "style": {
-        "colorTheme": "light"
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
       },
       "blocks": [
         {
-          "id": "blk_e6av45ds9d",
-          "type": "text",
+          "id": "blk_ea1tphpfaq",
+          "type": "component/pw2-hero",
           "v": 1,
           "fields": {
-            "content": {
+            "body": "Power With is for leaders who have built a great deal and still sense that something essential remains out of reach. It shows you how to hold your influence so the people closest to you grow stronger in your presence.",
+            "formLabel": "FREE · THE SPOKEN WORD",
+            "lead": "The strategies that build success often erode the relationships success depends on.",
+            "subtitle": "The Foundation of Lasting Influence",
+            "title": "Power With"
+          }
+        },
+        {
+          "id": "blk_k5r77ynj3f",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Hero signup",
+          "fields": {
+            "askName": false,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Send me the words",
+            "successMessage": "Almost there. Check your inbox to confirm, and the words will follow.",
+            "description": "",
+            "heading": "",
+            "note": "The written piece, free in your inbox today. You will also hear first when the book is released."
+          },
+          "variant": "inline"
+        }
+      ]
+    },
+    {
+      "id": "sec_4sc40x9a4v",
+      "preset": "component/pw2-pattern@1",
+      "label": "The Pattern (Oxblood)",
+      "anchor": "pattern",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_md01as3jjb",
+          "type": "component/pw2-pattern",
+          "v": 1,
+          "fields": {
+            "closing": "Power With makes the pattern visible while it can still change.",
+            "headline": "The drive that builds companies can dismantle marriages.",
+            "kicker": "The pattern",
+            "paragraphs": [
+              {
+                "text": "Most people treat their success and their relational struggles as separate problems. The career is going well. The marriage is hard. Both run on the same operating system."
+              },
+              {
+                "text": "The strategies that win in competition are specific. Control, self-sufficiency, the refusal to be affected, the need to stay ahead. At home and on a team, those same strategies create distance. The cost builds so slowly that most people see it only once it runs deep."
+              }
+            ],
+            "subhead": "The control that commands respect can silence the people who love you most. The armor that makes you formidable can make you unreachable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_mthts7n9av",
+      "preset": "component/pw2-framework@1",
+      "label": "The Framework (three terms)",
+      "anchor": "framework",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_y8dyz80q8p",
+          "type": "component/pw2-framework",
+          "v": 1,
+          "fields": {
+            "cards": [
+              {
+                "body": "Every conversation shapes one. Every meeting, every dinner and every decision shapes the trust and safety of the people around you. You hold more power than you may realize.",
+                "definition": "Power is the capacity to shape outcomes.",
+                "icon": "circle",
+                "label": "Power"
+              },
+              {
+                "body": "It can look like competence, decisiveness and strength. In a crisis it has its place. As a default it produces distance, distrust and isolation, slowly, beneath a life that still looks highly functional.",
+                "definition": "Power over is the use of influence to control.",
+                "icon": "over",
+                "label": "Power over"
+              },
+              {
+                "body": "It holds authority and relationship at the same time. You lead, decide and act while staying connected to the people your choices affect. It is the more disciplined orientation, and it asks more of you than power over ever did.",
+                "definition": "Power with is the use of influence to stay in relationship.",
+                "icon": "with",
+                "label": "Power with"
+              }
+            ],
+            "closing": "The trust you build carries forward in your absence. That is lasting influence.",
+            "headline": "A language for power.",
+            "intro": "Three terms carry the whole book. They are simple to define. Once you hold them, you see every relationship, every team and every room differently.",
+            "kicker": "The framework"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_ac9tmcw0yn",
+      "preset": "component/pw2-book@1",
+      "label": "The Book (photo beside Ink panel)",
+      "anchor": "book",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_334nv9kcmd",
+          "type": "component/pw2-book",
+          "v": 1,
+          "fields": {
+            "button1Label": "About the book",
+            "button1Link": {
+              "page": "pg_h3kx8njq8t",
+              "type": "page"
+            },
+            "button2Label": "Get on the list",
+            "button2Link": {
+              "anchor": "words",
+              "page": "pg_kpb904t192",
+              "type": "page"
+            },
+            "date": "Out January 2027.",
+            "description": "The strategies that build success often erode the relationships success depends on. Four parts and ten principles show you how to hold your influence and stay connected to the people who matter most.",
+            "kicker": "The book",
+            "photo": {
+              "alt": "Two copies of Power With by Sophia Life leaning on a stone step in afternoon light, with window shadows falling across them",
+              "src": "media/2026/11/power-with-book-on-ledge-sqj9.jpg"
+            },
+            "subtitle": "The Foundation of Lasting Influence",
+            "title": "Power With"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_3gzk3mq5ev",
+      "preset": "component/pw2-list@1",
+      "label": "Get on the list (text beside the signup form)",
+      "anchor": "words",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light-accent",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_68dmb8acae",
+          "type": "component/pw2-list",
+          "v": 1,
+          "fields": {
+            "headline": "Get the book.",
+            "intro": {
               "type": "doc",
               "content": [
                 {
-                  "type": "heading",
-                  "attrs": {
-                    "level": 1
-                  },
+                  "type": "paragraph",
                   "content": [
                     {
                       "type": "text",
-                      "text": "/"
+                      "text": "Find out when the book launches and when to get a copy. You will also receive a copy of the poem "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Power With, America",
+                      "marks": [
+                        {
+                          "type": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
                     }
                   ]
                 }
               ]
-            }
+            },
+            "kicker": "Get on the list"
           }
+        },
+        {
+          "id": "blk_je6n6gdkpr",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Book list signup",
+          "fields": {
+            "askName": true,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Get on the list",
+            "successMessage": "Almost there. Check your inbox to confirm, and the poem will follow.",
+            "description": "",
+            "heading": "",
+            "note": "The poem arrives today. Occasional letters from Sophia follow, with first word when the book launches. Unsubscribe at any time."
+          },
+          "variant": "stacked"
+        }
+      ]
+    },
+    {
+      "id": "sec_659406tm40",
+      "preset": "component/pw2-practice@1",
+      "label": "The Practice (ten principles)",
+      "anchor": "practice",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_32gnztztt9",
+          "type": "component/pw2-practice",
+          "v": 1,
+          "fields": {
+            "closing": "Each return is the practice.",
+            "headline": "10 principles make power with possible.",
+            "intro": "Each principle is a practice. Each one closes with a single action you can begin today. Together they build the capacity to stay connected under pressure.",
+            "items": [
+              {
+                "icon": "i1",
+                "line": "Staying present through discomfort.",
+                "name": "Emotional regulation",
+                "number": "01"
+              },
+              {
+                "icon": "i2",
+                "line": "Prioritizing another's experience when it matters most.",
+                "name": "Empathy",
+                "number": "02"
+              },
+              {
+                "icon": "i3",
+                "line": "Receiving another person's world.",
+                "name": "Listening",
+                "number": "03"
+              },
+              {
+                "icon": "i4",
+                "line": "Remaining teachable while staying yourself.",
+                "name": "Humility",
+                "number": "04"
+              },
+              {
+                "icon": "i5",
+                "line": "Holding more than one perspective.",
+                "name": "Understanding",
+                "number": "05"
+              },
+              {
+                "icon": "i6",
+                "line": "Transforming control into connection.",
+                "name": "Relationality",
+                "number": "06"
+              },
+              {
+                "icon": "i7",
+                "line": "Aligning word, action and energy.",
+                "name": "Integrity",
+                "number": "07"
+              },
+              {
+                "icon": "i8",
+                "line": "Building safety through consistency, transparency and care.",
+                "name": "Trust",
+                "number": "08"
+              },
+              {
+                "icon": "i9",
+                "line": "Owning your impact.",
+                "name": "Responsibility",
+                "number": "09"
+              },
+              {
+                "icon": "i10",
+                "line": "Coming back.",
+                "name": "Repair",
+                "number": "10"
+              }
+            ],
+            "kicker": "The practice"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_hzj369n2n1",
+      "preset": "component/pw2-leaders@1",
+      "label": "For Leaders (two columns)",
+      "anchor": "leaders",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light-accent",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_kt2cfr6ys8",
+          "type": "component/pw2-leaders",
+          "v": 1,
+          "fields": {
+            "closing": "The inner work is the leadership work.",
+            "columns": [
+              {
+                "body": "It comes with the title. It can compel compliance and direct behavior. Compliance is its ceiling.",
+                "label": "Positional authority"
+              },
+              {
+                "body": "It accumulates through trust. People bring you problems early. They tell you what they tell no one else. They commit to decisions they did not make, and they stay when they could leave.",
+                "label": "Relational authority"
+              }
+            ],
+            "headline": "The authority people follow by choice.",
+            "kicker": "For leaders"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_9dsqgs8x62",
+      "preset": "component/pw2-performance@1",
+      "label": "Spoken Aloud (performance video)",
+      "anchor": "performance",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_qxh36pcztv",
+          "type": "component/pw2-performance",
+          "v": 1,
+          "fields": {
+            "caption": "[YouTube link for the INC performance goes here]",
+            "headline": "Power With, America",
+            "kicker": "Spoken aloud",
+            "subline": "An artistic keynote for an influential audience."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_v2s62p1pzc",
+      "preset": "component/pw2-author@1",
+      "label": "The Author",
+      "anchor": "author",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_tanzqh25a0",
+          "type": "component/pw2-author",
+          "v": 1,
+          "fields": {
+            "kicker": "The author",
+            "lede": "Sophia Life writes from the field. For more than a decade she has studied the patterns in this book up close and practiced the principles that change them.",
+            "name": "Sophia Life",
+            "names": "Carol Gilligan · Martin Buber · Jessica Benjamin · Terry Real · Otto Kernberg · Heinz Kohut · Donald Winnicott · Joseph Burgo · Daniel Schmachtenberger",
+            "namesLabel": "The thinking behind the book",
+            "paragraphs": [
+              {
+                "text": "She paired that practice with years of study across depth psychology, attachment theory, developmental psychology, neuroscience, systems thinking, leadership theory and relational philosophy. The result is a synthesis written for the person living inside these patterns, and for the person who loves them."
+              },
+              {
+                "text": "Sophia is a coach and organizational consultant with a background in urban planning and product development. She writes The Quality of Life on Substack and lives in Boulder, Colorado. [Years in practice, notable clients and speaking credits.]"
+              }
+            ],
+            "placeholder": "[Portrait from the recent shoot]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_7x22b0zabx",
+      "preset": "component/pw2-substack@1",
+      "label": "Substack (essays)",
+      "anchor": "essays",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light-accent",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_5rjxraeb5y",
+          "type": "component/pw2-substack",
+          "v": 1,
+          "fields": {
+            "buttonLabel": "Subscribe on Substack",
+            "buttonLink": {
+              "type": "url",
+              "url": "https://substack.com"
+            },
+            "cardLabel": "The quality of life",
+            "essays": [
+              {
+                "description": "[One sentence describing the essay.]",
+                "subheading": "[Subheading]",
+                "title": "[Essay title]"
+              },
+              {
+                "description": "[One sentence describing the essay.]",
+                "subheading": "[Subheading]",
+                "title": "[Second essay title]"
+              },
+              {
+                "description": "[One sentence describing the essay.]",
+                "subheading": "[Subheading]",
+                "title": "[Third essay title]"
+              }
+            ],
+            "headline": "Read more from Sophia on Substack.",
+            "intro": "The Quality of Life. [One line on what the publication explores.]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_696j9fyzs6",
+      "preset": "component/pw2-final@1",
+      "label": "Closing invitation (clay)",
+      "anchor": "join",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "brand",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_jw91k30byt",
+          "type": "component/pw2-final",
+          "v": 1,
+          "fields": {
+            "headline": "Influence that keeps the relationship intact.",
+            "line": "Leave your email to find out when the book launches and when to get a copy."
+          }
+        },
+        {
+          "id": "blk_2zyg0337z5",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Closing signup",
+          "fields": {
+            "askName": false,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Get on the list",
+            "successMessage": "Almost there. Check your inbox to confirm, and the poem will follow.",
+            "description": "",
+            "heading": ""
+          },
+          "variant": "inline"
         }
       ]
     }

@@ -1,0 +1,219 @@
+{
+  "id": "pg_7r59hq0era",
+  "title": "Introduction",
+  "slug": "introduction",
+  "seo": {
+    "description": "The opening chapter of Power With by Sophia Life. A language for power that changes what you are able to see."
+  },
+  "hidden": true,
+  "sections": [
+    {
+      "id": "sec_qvrzfy4vd9",
+      "preset": "component/pw2-page-hero@1",
+      "label": "Page opening (Obsidian)",
+      "anchor": "top",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_k5s7yfb13e",
+          "type": "component/pw2-page-hero",
+          "v": 1,
+          "fields": {
+            "body": "In the opening pages, Sophia Life gives you a language for power that changes what you are able to see. At home, in your family and in every team you lead.",
+            "formFollows": true,
+            "formLabel": "Send me the Introduction",
+            "items": [
+              {
+                "text": "The three terms that organize every relationship you hold. Power, power over and power with."
+              },
+              {
+                "text": "Why the qualities that drive achievement so often create distance at home."
+              },
+              {
+                "text": "How defended patterns form, and why they come to feel like personality."
+              },
+              {
+                "text": "Why these patterns can change, and where change begins."
+              }
+            ],
+            "kicker": "Free from Power With by Sophia Life",
+            "lead": "Read the Introduction to Power With, free, before the book is released.",
+            "showSigil": false,
+            "title": "The strategies that kept you safe are still running.",
+            "listLabel": "Inside the Introduction"
+          }
+        },
+        {
+          "id": "blk_3kcftmckzc",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Introduction signup",
+          "fields": {
+            "askName": false,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Send me the Introduction",
+            "successMessage": "Almost there. Check your inbox to confirm, and the Introduction will follow.",
+            "description": "",
+            "heading": "",
+            "note": "Free. Arrives in your inbox today. Unsubscribe at any time."
+          },
+          "variant": "inline"
+        }
+      ]
+    },
+    {
+      "id": "sec_58czg7jh61",
+      "preset": "component/pw2-quote@1",
+      "label": "Quote band",
+      "anchor": "quote",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_rnmq1q5r8y",
+          "type": "component/pw2-quote",
+          "v": 1,
+          "fields": {
+            "attribution": "From Power With",
+            "ground": "oxblood",
+            "quote": "What looks like confidence is often defense with good posture."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_830fz5z71q",
+      "preset": "component/pw2-author@1",
+      "label": "The Author",
+      "anchor": "author",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_j3xm5fjf4q",
+          "type": "component/pw2-author",
+          "v": 1,
+          "fields": {
+            "kicker": "The author",
+            "lede": "Sophia Life writes from the field. For more than a decade she has studied the patterns in this book up close and practiced the principles that change them.",
+            "name": "Sophia Life",
+            "names": "Carol Gilligan · Martin Buber · Jessica Benjamin · Terry Real · Otto Kernberg · Heinz Kohut · Donald Winnicott · Joseph Burgo · Daniel Schmachtenberger",
+            "namesLabel": "The thinking behind the book",
+            "paragraphs": [
+              {
+                "text": "She paired that practice with years of study across depth psychology, attachment theory, developmental psychology, neuroscience, systems thinking, leadership theory and relational philosophy. The result is a synthesis written for the person living inside these patterns, and for the person who loves them."
+              },
+              {
+                "text": "Sophia is a coach and organizational consultant with a background in urban planning and product development. She writes The Quality of Life on Substack and lives in Boulder, Colorado. [Years in practice, notable clients and speaking credits.]"
+              }
+            ],
+            "placeholder": "[Portrait from the recent shoot]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_qkxpjc9en5",
+      "preset": "component/pw2-final@1",
+      "label": "Closing invitation (clay)",
+      "anchor": "join",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "brand",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_zn0sm00xmt",
+          "type": "component/pw2-final",
+          "v": 1,
+          "fields": {
+            "headline": "Begin with the first pages.",
+            "line": "Leave your email and the Introduction arrives today."
+          }
+        },
+        {
+          "id": "blk_qv2wpb4akh",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Closing signup",
+          "fields": {
+            "askName": false,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Send me the Introduction",
+            "successMessage": "Almost there. Check your inbox to confirm, and the Introduction will follow.",
+            "description": "",
+            "heading": ""
+          },
+          "variant": "inline"
+        }
+      ]
+    }
+  ]
+}

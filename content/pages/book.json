@@ -1,0 +1,508 @@
+{
+  "id": "pg_h3kx8njq8t",
+  "title": "The Book",
+  "slug": "book",
+  "seo": {
+    "description": "Power With: The Foundation of Lasting Influence. Four parts and ten principles. Publishing January 2027 in paperback and Kindle."
+  },
+  "sections": [
+    {
+      "id": "sec_1ryqc55hbc",
+      "preset": "component/pw2-page-hero@1",
+      "label": "Page opening (Obsidian)",
+      "anchor": "top",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_ww3fv6h16k",
+          "type": "component/pw2-page-hero",
+          "v": 1,
+          "fields": {
+            "body": "Power With is for leaders who want strength and closeness held together. Four parts and ten principles, each principle closing with a single action you can begin today.",
+            "formFollows": false,
+            "items": [],
+            "kicker": "The book · January 2027",
+            "lead": "Power With: The Foundation of Lasting Influence.",
+            "showSigil": false,
+            "title": "Power and closeness, held together."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_mbpsbc039w",
+      "preset": "component/pw2-book@1",
+      "label": "The Book (photo beside Ink panel)",
+      "anchor": "book",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_2nsz8tjnrg",
+          "type": "component/pw2-book",
+          "v": 1,
+          "fields": {
+            "button1Label": "See the formats",
+            "button1Link": {
+              "anchor": "formats",
+              "page": "pg_h3kx8njq8t",
+              "type": "page"
+            },
+            "button2Label": "Get on the list",
+            "button2Link": {
+              "anchor": "words",
+              "page": "pg_h3kx8njq8t",
+              "type": "page"
+            },
+            "date": "Out January 2027.",
+            "description": "The strategies that build success often erode the relationships success depends on. Four parts and ten principles show you how to hold your influence and stay connected to the people who matter most.",
+            "kicker": "The book",
+            "photo": {
+              "alt": "Two copies of Power With by Sophia Life leaning on a stone step in afternoon light, with window shadows falling across them",
+              "src": "media/2026/11/power-with-book-on-ledge-sqj9.jpg"
+            },
+            "subtitle": "The Foundation of Lasting Influence",
+            "title": "Power With"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_ydqbvhbdgp",
+      "preset": "component/pw2-links@1",
+      "label": "Link blocks",
+      "anchor": "formats",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light-accent",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_n0znt585xf",
+          "type": "component/pw2-links",
+          "v": 1,
+          "fields": {
+            "blocks": [
+              {
+                "body": "On Amazon at release.",
+                "buttonLabel": "Amazon",
+                "buttonLink": {
+                  "anchor": "words",
+                  "page": "pg_h3kx8njq8t",
+                  "type": "page"
+                },
+                "headline": "$21.95 [to confirm]",
+                "label": "Paperback"
+              },
+              {
+                "body": "On Amazon at release.",
+                "buttonLabel": "Amazon Kindle",
+                "buttonLink": {
+                  "anchor": "words",
+                  "page": "pg_h3kx8njq8t",
+                  "type": "page"
+                },
+                "headline": "[Price]",
+                "label": "Kindle"
+              },
+              {
+                "body": "Readers on the release list hear first.",
+                "headline": "Coming after release",
+                "label": "Audiobook"
+              }
+            ],
+            "ground": "stone"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_ddm3b58v65",
+      "preset": "component/pw2-measures@1",
+      "label": "Numbered list",
+      "anchor": "inside",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_81dcdkcc6e",
+          "type": "component/pw2-measures",
+          "v": 1,
+          "fields": {
+            "closing": "Read it through once. Then return to the principles one at a time.",
+            "ground": "bone",
+            "headline": "Four parts. Ten principles.",
+            "intro": "Parts One and Two are the diagnosis. Parts Three and Four are the practice.",
+            "items": [
+              {
+                "text": "Part One examines the drive for power, where it comes from and how it takes hold."
+              },
+              {
+                "text": "Part Two makes the case that the strength of your relationships is the most accurate measure of success."
+              },
+              {
+                "text": "Part Three gives the ten relational principles that make power with possible in daily life."
+              },
+              {
+                "text": "Part Four extends these capacities into leadership, organizations and the systems you are responsible for."
+              }
+            ],
+            "kicker": "Inside the book"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_rh82tp9a71",
+      "preset": "component/pw2-measures@1",
+      "label": "Numbered list",
+      "anchor": "measures",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_p8dqdpxw7x",
+          "type": "component/pw2-measures",
+          "v": 1,
+          "fields": {
+            "closing": "These are the hardest measures there are.",
+            "ground": "oxblood",
+            "headline": "Success is measured in relationship.",
+            "intro": "Power With offers five measures. Read them slowly. Notice which one stays with you.",
+            "items": [
+              {
+                "text": "The safety people feel in your presence."
+              },
+              {
+                "text": "The willingness of others to tell you what is actually happening."
+              },
+              {
+                "text": "The quality of your attention when others speak."
+              },
+              {
+                "text": "Your willingness to repair when you have caused harm."
+              },
+              {
+                "text": "The depth of connection you sustain over time."
+              }
+            ],
+            "kicker": "A new measure"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_p8kk2e6gce",
+      "preset": "component/pw2-list@1",
+      "label": "Get on the list (text beside the signup form)",
+      "anchor": "words",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light-accent",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_q3ss77mvt1",
+          "type": "component/pw2-list",
+          "v": 1,
+          "fields": {
+            "headline": "Hear first when the book is released.",
+            "intro": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Leave your email and Sophia will write the week Power With is released. You will also receive a copy of the poem "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Power With, America",
+                      "marks": [
+                        {
+                          "type": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            "kicker": "The release list"
+          }
+        },
+        {
+          "id": "blk_as0pfzvp21",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Release list signup",
+          "fields": {
+            "askName": true,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Tell me when it is out",
+            "successMessage": "Almost there. Check your inbox to confirm, and the poem will follow.",
+            "description": "",
+            "heading": "",
+            "note": "The poem arrives today. Occasional letters from Sophia follow, with first word when the book launches. Unsubscribe at any time."
+          },
+          "variant": "stacked"
+        }
+      ]
+    },
+    {
+      "id": "sec_yjxgmc6r6x",
+      "preset": "component/pw2-links@1",
+      "label": "Link blocks",
+      "anchor": "give",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_y0jqc14th5",
+          "type": "component/pw2-links",
+          "v": 1,
+          "fields": {
+            "blocks": [
+              {
+                "body": "Give them the book, and keep a copy for yourself.",
+                "buttonLabel": "Send a copy",
+                "buttonLink": {
+                  "anchor": "formats",
+                  "page": "pg_h3kx8njq8t",
+                  "type": "page"
+                },
+                "headline": "For the leader in your life.",
+                "label": "Give this book"
+              },
+              {
+                "body": "Orders of ten or more receive tier pricing and a reading guide. [Tier pricing to set.]",
+                "buttonLabel": "Ask about bulk orders",
+                "buttonLink": {
+                  "anchor": "join",
+                  "page": "pg_kpb904t192",
+                  "type": "page"
+                },
+                "headline": "Copies for your leadership team.",
+                "label": "For teams"
+              }
+            ],
+            "ground": "ink"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_m4s7ck0z5a",
+      "preset": "component/pw2-faq@1",
+      "label": "Questions",
+      "anchor": "questions",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_vhwh4rcm5e",
+          "type": "component/pw2-faq",
+          "v": 1,
+          "fields": {
+            "ground": "bone",
+            "headline": "Before you order.",
+            "items": [
+              {
+                "answer": "January 2027, in the second week. [Exact date to confirm.] Join the release list to hear the day it opens.",
+                "question": "When is the book released?"
+              },
+              {
+                "answer": "Paperback and Kindle on Amazon at release.",
+                "question": "Where can I buy it?"
+              },
+              {
+                "answer": "Yes. An audiobook is planned after release, and readers on the list will hear first.",
+                "question": "Is there an audiobook?"
+              },
+              {
+                "answer": "Yes. Orders of ten or more receive tier pricing and a reading guide.",
+                "question": "Can my company order in bulk?"
+              }
+            ],
+            "kicker": "Questions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_k60phn9mc3",
+      "preset": "component/pw2-final@1",
+      "label": "Closing invitation (clay)",
+      "anchor": "join",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "brand",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_wmzhq1kfxy",
+          "type": "component/pw2-final",
+          "v": 1,
+          "fields": {
+            "headline": "Influence that keeps the relationship intact.",
+            "line": "Leave your email to find out when the book launches and when to get a copy."
+          }
+        },
+        {
+          "id": "blk_1125j6h8bt",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Closing signup",
+          "fields": {
+            "askName": false,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Get on the list",
+            "successMessage": "Almost there. Check your inbox to confirm, and the poem will follow.",
+            "description": "",
+            "heading": ""
+          },
+          "variant": "inline"
+        }
+      ]
+    }
+  ]
+}

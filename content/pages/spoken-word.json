@@ -1,0 +1,257 @@
+{
+  "id": "pg_kxst34wch8",
+  "title": "The Spoken Word",
+  "slug": "spoken-word",
+  "seo": {
+    "description": "Power With began as a book and became a performance. Watch it, and receive the poem Power With, America free."
+  },
+  "hidden": true,
+  "sections": [
+    {
+      "id": "sec_axw77q68vw",
+      "preset": "component/pw2-page-hero@1",
+      "label": "Page opening (Obsidian)",
+      "anchor": "top",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_xjxs6dz8pw",
+          "type": "component/pw2-page-hero",
+          "v": 1,
+          "fields": {
+            "body": "Receive the poem Power With, America, set as a PDF to read slowly and return to.",
+            "formFollows": true,
+            "formLabel": "Send it to my inbox",
+            "items": [],
+            "kicker": "Free · From Sophia Life",
+            "lead": "Power With began as a book and became a performance.",
+            "showSigil": true,
+            "title": "Keep the words."
+          }
+        },
+        {
+          "id": "blk_n146v07n3z",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Spoken word signup",
+          "fields": {
+            "askName": false,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Send me the words",
+            "successMessage": "Almost there. Check your inbox to confirm, and the words will follow.",
+            "description": "",
+            "heading": "",
+            "note": "Free. Arrives in your inbox today. You will also hear first when the book is released."
+          },
+          "variant": "inline"
+        }
+      ]
+    },
+    {
+      "id": "sec_pet1dxccmc",
+      "preset": "component/pw2-performance@1",
+      "label": "Spoken Aloud (performance video)",
+      "anchor": "performance",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "dark",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_2mmbmp3aqm",
+          "type": "component/pw2-performance",
+          "v": 1,
+          "fields": {
+            "caption": "[YouTube link for the INC performance goes here]",
+            "headline": "Power With, America",
+            "kicker": "The performance",
+            "subline": "First performed at the Independent National Convention."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_98ndpd2vxz",
+      "preset": "component/pw2-book@1",
+      "label": "The Book (photo beside Ink panel)",
+      "anchor": "book",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_682prjbx1c",
+          "type": "component/pw2-book",
+          "v": 1,
+          "fields": {
+            "button1Label": "About the book",
+            "button1Link": {
+              "page": "pg_h3kx8njq8t",
+              "type": "page"
+            },
+            "button2Label": "Get on the list",
+            "button2Link": {
+              "anchor": "join",
+              "page": "pg_kxst34wch8",
+              "type": "page"
+            },
+            "date": "Out January 2027.",
+            "description": "The strategies that build success often erode the relationships success depends on. Four parts and ten principles show you how to hold your influence and stay connected to the people who matter most.",
+            "kicker": "The words come from a book",
+            "photo": {
+              "alt": "Two copies of Power With by Sophia Life leaning on a stone step in afternoon light, with window shadows falling across them",
+              "src": "media/2026/11/power-with-book-on-ledge-sqj9.jpg"
+            },
+            "subtitle": "The Foundation of Lasting Influence",
+            "title": "Power With"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_gwe69hn20j",
+      "preset": "component/pw2-author@1",
+      "label": "The Author",
+      "anchor": "author",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "light",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_f2bq4jxd1p",
+          "type": "component/pw2-author",
+          "v": 1,
+          "fields": {
+            "kicker": "The author",
+            "lede": "Sophia Life writes from the field. For more than a decade she has studied the patterns in this book up close and practiced the principles that change them.",
+            "name": "Sophia Life",
+            "names": "Carol Gilligan · Martin Buber · Jessica Benjamin · Terry Real · Otto Kernberg · Heinz Kohut · Donald Winnicott · Joseph Burgo · Daniel Schmachtenberger",
+            "namesLabel": "The thinking behind the book",
+            "paragraphs": [
+              {
+                "text": "She paired that practice with years of study across depth psychology, attachment theory, developmental psychology, neuroscience, systems thinking, leadership theory and relational philosophy. The result is a synthesis written for the person living inside these patterns, and for the person who loves them."
+              },
+              {
+                "text": "Sophia is a coach and organizational consultant with a background in urban planning and product development. She writes The Quality of Life on Substack and lives in Boulder, Colorado. [Years in practice, notable clients and speaking credits.]"
+              }
+            ],
+            "placeholder": "[Portrait from the recent shoot]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sec_hjgxn373tr",
+      "preset": "component/pw2-final@1",
+      "label": "Closing invitation (clay)",
+      "anchor": "join",
+      "layout": {
+        "mode": "stack",
+        "columns": {
+          "d": [
+            12
+          ]
+        },
+        "blockGap": {
+          "d": 0,
+          "t": 0,
+          "m": 0
+        },
+        "width": "full"
+      },
+      "style": {
+        "colorTheme": "brand",
+        "padding": {
+          "d": "none",
+          "m": "none"
+        }
+      },
+      "blocks": [
+        {
+          "id": "blk_qa9yqf58vr",
+          "type": "component/pw2-final",
+          "v": 1,
+          "fields": {
+            "headline": "Influence that keeps the relationship intact.",
+            "line": "Leave your email to find out when the book launches and when to get a copy."
+          }
+        },
+        {
+          "id": "blk_r5hsvzcp6e",
+          "type": "newsletter",
+          "v": 1,
+          "column": 0,
+          "label": "Closing signup",
+          "fields": {
+            "askName": false,
+            "placeholder": "you@example.com",
+            "buttonLabel": "Get on the list",
+            "successMessage": "Almost there. Check your inbox to confirm, and the poem will follow.",
+            "description": "",
+            "heading": ""
+          },
+          "variant": "inline"
+        }
+      ]
+    }
+  ]
+}

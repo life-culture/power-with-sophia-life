@@ -1,16 +1,265 @@
 {
   "choices": {
     "palette": {
-      "brand": "oklch(0.25 0 0)",
-      "neutral": "pure",
+      "brand": "#8C5B46",
+      "neutral": "warm",
       "contrast": "standard",
-      "source": "curated"
+      "source": "brand"
     },
     "pairing": "fraunces-hanken",
-    "density": "comfortable",
-    "shape": "soft",
+    "density": "airy",
+    "shape": "sharp",
     "buttons": "solid",
     "motion": "subtle",
-    "imageTreatment": "none"
+    "imageTreatment": "none",
+    "typography": {
+      "heading": {
+        "family": "Cormorant Garamond",
+        "category": "serif",
+        "weights": [
+          500
+        ],
+        "italic": true
+      },
+      "body": {
+        "family": "EB Garamond",
+        "category": "serif",
+        "weights": [
+          400
+        ],
+        "italic": true
+      },
+      "label": {
+        "family": "Montserrat",
+        "category": "sans-serif",
+        "weights": [
+          300,
+          400
+        ]
+      },
+      "scale": {
+        "body": {
+          "size": 21,
+          "sizeMobile": 19,
+          "lineHeight": 1.5,
+          "font": "body"
+        },
+        "button": {
+          "size": 12,
+          "sizeMobile": 12,
+          "letterSpacing": 0.24,
+          "case": "uppercase",
+          "font": "label"
+        },
+        "eyebrow": {
+          "size": 12,
+          "sizeMobile": 12,
+          "letterSpacing": 0.32,
+          "case": "uppercase",
+          "font": "label"
+        },
+        "h1": {
+          "size": 76,
+          "sizeMobile": 44,
+          "lineHeight": 1.02,
+          "weight": 500,
+          "font": "heading"
+        },
+        "h2": {
+          "size": 60,
+          "sizeMobile": 40,
+          "lineHeight": 1.08,
+          "weight": 500,
+          "font": "heading"
+        },
+        "h3": {
+          "size": 34,
+          "sizeMobile": 27,
+          "lineHeight": 1.2,
+          "weight": 500,
+          "font": "heading"
+        },
+        "h4": {
+          "size": 30,
+          "sizeMobile": 23,
+          "lineHeight": 1.25,
+          "weight": 500,
+          "font": "heading"
+        },
+        "nav": {
+          "size": 12,
+          "sizeMobile": 12,
+          "letterSpacing": 0.24,
+          "case": "uppercase",
+          "font": "label"
+        },
+        "small": {
+          "size": 16,
+          "sizeMobile": 16,
+          "lineHeight": 1.5,
+          "font": "body"
+        },
+        "wordmark": {
+          "size": 14,
+          "sizeMobile": 14,
+          "letterSpacing": 0.32,
+          "case": "uppercase",
+          "font": "label"
+        }
+      },
+      "eyebrowColor": "muted"
+    },
+    "layout": {
+      "contentWidth": 1200,
+      "narrowWidth": 1000,
+      "sectionPadding": 160,
+      "sectionPaddingMobile": 88,
+      "gutter": 32,
+      "gutterMobile": 20,
+      "pageBackground": "#EDE6D8"
+    }
+  },
+  "overrides": {
+    "color": {
+      "brand": {
+        "accent": {
+          "$value": "#aec0cc",
+          "$type": "color"
+        },
+        "accent-text": {
+          "$value": "#3c372c",
+          "$type": "color"
+        },
+        "background": {
+          "$value": "#8C5B46",
+          "$type": "color"
+        },
+        "heading": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "surface": {
+          "$value": "#8C5B46",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        }
+      },
+      "dark": {
+        "accent": {
+          "$value": "#8C5B46",
+          "$type": "color"
+        },
+        "accent-text": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "background": {
+          "$value": "#010A12",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "#7B8680",
+          "$type": "color"
+        },
+        "focus": {
+          "$value": "#8C5B46",
+          "$type": "color"
+        },
+        "heading": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "link": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "surface": {
+          "$value": "#010A12",
+          "$type": "color"
+        },
+        "surface-raised": {
+          "$value": "#010A12",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "text-muted": {
+          "$value": "#BBAFA3",
+          "$type": "color"
+        }
+      },
+      "light-accent": {
+        "accent": {
+          "$value": "#5E3A3C",
+          "$type": "color"
+        },
+        "accent-text": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "background": {
+          "$value": "#E0D9CB",
+          "$type": "color"
+        },
+        "heading": {
+          "$value": "#010A12",
+          "$type": "color"
+        },
+        "surface": {
+          "$value": "#E0D9CB",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "#010A12",
+          "$type": "color"
+        }
+      },
+      "light": {
+        "accent": {
+          "$value": "#5E3A3C",
+          "$type": "color"
+        },
+        "accent-text": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "background": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "#BBAFA3",
+          "$type": "color"
+        },
+        "heading": {
+          "$value": "#010A12",
+          "$type": "color"
+        },
+        "surface": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "surface-raised": {
+          "$value": "#EDE6D8",
+          "$type": "color"
+        },
+        "text": {
+          "$value": "#010A12",
+          "$type": "color"
+        },
+        "text-muted": {
+          "$value": "#5E3A3C",
+          "$type": "color"
+        }
+      }
+    },
+    "button": {
+      "primary": {}
+    }
   }
 }

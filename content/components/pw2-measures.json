@@ -1,0 +1,102 @@
+{
+  "name": "pw2-measures",
+  "label": "Numbered list",
+  "description": "Label, line, headline, intro, a numbered list and a closing line, on a background you choose.",
+  "version": 1,
+  "category": "power-with",
+  "fields": {
+    "closing": {
+      "kind": "text",
+      "label": "Closing line",
+      "optional": true,
+      "maxLength": 200
+    },
+    "ground": {
+      "kind": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "ink",
+          "label": "Obsidian"
+        },
+        {
+          "value": "bone",
+          "label": "Bone"
+        },
+        {
+          "value": "stone",
+          "label": "Stone"
+        },
+        {
+          "value": "oxblood",
+          "label": "Oxblood"
+        },
+        {
+          "value": "clay",
+          "label": "Clay"
+        }
+      ]
+    },
+    "headline": {
+      "kind": "text",
+      "label": "Headline",
+      "maxLength": 140
+    },
+    "intro": {
+      "kind": "text",
+      "label": "Intro",
+      "optional": true,
+      "maxLength": 400,
+      "multiline": true
+    },
+    "items": {
+      "kind": "list",
+      "label": "Items",
+      "fields": {
+        "text": {
+          "kind": "text",
+          "label": "Item",
+          "maxLength": 300,
+          "multiline": true
+        }
+      },
+      "min": 1,
+      "max": 9,
+      "itemLabel": "text"
+    },
+    "kicker": {
+      "kind": "text",
+      "label": "Small label",
+      "maxLength": 80
+    }
+  },
+  "defaults": {
+    "closing": "Read it through once. Then return to the principles one at a time.",
+    "ground": "bone",
+    "headline": "Four parts. Ten principles.",
+    "intro": "Parts One and Two are the diagnosis. Parts Three and Four are the practice.",
+    "items": [
+      {
+        "text": "Part One examines the drive for power, where it comes from and how it takes hold."
+      },
+      {
+        "text": "Part Two makes the case that the strength of your relationships is the most accurate measure of success."
+      }
+    ],
+    "kicker": "Inside the book"
+  },
+  "template": "<div class=\"pw pad g-{{ground}}\"><div class=\"in\"><p class=\"kick rv\" data-trim>{{kicker}}</p><div class=\"rule rv\"></div><h2 class=\"rv\" data-trim>{{headline}}</h2>{{#if intro}}<p class=\"intro rv d1\">{{intro}}</p>{{/if}}<ol class=\"items rv d2\">{{#each items}}<li><span class=\"n\">{{@number}}</span><span class=\"t\">{{text}}</span></li>{{/each}}</ol>{{#if closing}}<p class=\"close rv\">{{closing}}</p>{{/if}}</div></div>",
+  "css": ":scope{display:block;width:100%}\n.pw{--ink:#010A12;--bone:#EDE6D8;--stone:#E0D9CB;--sand:#BBAFA3;--oxblood:#321013;--mulberry:#5E3A3C;--clay:#8C5B46;--gilt:#C6A15B;--head:'Cormorant Garamond',serif;--body:'EB Garamond',serif;--label:'Montserrat',sans-serif;position:relative;font-family:var(--body);font-size:21px;line-height:1.5;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-align:left}\n.pw *{box-sizing:border-box}\n:where(.pw p,.pw h1,.pw h2,.pw h3,.pw ul,.pw ol,.pw li){margin:0;padding:0}\n:where(.pw p,.pw li,.pw h1,.pw h2,.pw h3){text-wrap:wrap}\n:where(.pw h1,.pw h2,.pw h3){color:inherit}\n:where(.pw){overflow-wrap:normal}\n.in{max-width:1200px;margin:0 auto;padding:0 32px}\n.narrow{max-width:1000px}\n.pad{padding:160px 0}\n.kick{margin:0;font-family:var(--label);font-weight:400;font-size:12px;line-height:18px;letter-spacing:.32em;text-transform:uppercase}\n.rule{width:64px;height:1px;background:var(--clay);border:0;margin:28px 0 32px}\n.pw h2{font-family:var(--head);font-weight:500;font-size:60px;line-height:1.08;letter-spacing:0;text-wrap:balance}\n.intro{margin:24px 0 0;max-width:36em}\n.close{font-family:var(--head);font-style:italic;font-weight:500;font-size:34px;line-height:1.2;margin:72px 0 0}\n.g-ink{background:var(--ink);color:var(--bone)}.g-ink .kick{color:var(--sand)}\n.g-bone{background:var(--bone);color:var(--ink)}.g-bone .kick{color:var(--mulberry)}\n.g-stone{background:var(--stone);color:var(--ink)}.g-stone .kick{color:var(--mulberry)}.g-stone .rule{background:var(--ink)}\n.g-oxblood{background:var(--oxblood);color:var(--bone)}.g-oxblood .kick{color:var(--sand)}.g-oxblood .rule{background:var(--sand)}\n.g-clay{background:var(--clay);color:var(--bone)}.g-clay .kick{color:var(--bone)}.g-clay .rule{background:var(--bone)}\n.items{list-style:none;margin:64px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px;counter-reset:none}\n.items li{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:28px 0;border-top:1px solid var(--sand)}\n.g-oxblood .items li,.g-ink .items li,.g-clay .items li{border-top-color:rgba(187,175,163,.35)}\n.items .n{font-family:var(--label);font-size:12px;letter-spacing:.3em;padding-top:10px;color:var(--clay)}\n.g-oxblood .items .n,.g-ink .items .n,.g-clay .items .n{color:var(--sand)}\n.items .n:before{content:\"0\"}\n.items .t{font-family:var(--head);font-weight:500;font-size:27px;line-height:1.3}\n@media (max-width:767px){.pw{font-size:19px}.in{padding:0 20px}.pad{padding:88px 0}.pw h2{font-size:40px}.close{font-size:27px;margin-top:44px}.items{grid-template-columns:1fr;margin-top:40px}.items li{grid-template-columns:44px 1fr;padding:22px 0}.items .t{font-size:23px}}\n.js-rv .rv{opacity:0;transform:translateY(16px);transition:opacity 1.3s ease,transform 1.3s ease}\n.js-rv .rv.on{opacity:1;transform:none}\n.js-rv .d1{transition-delay:.12s}.js-rv .d2{transition-delay:.24s}\n@media (prefers-reduced-motion:reduce){.js-rv .rv{opacity:1;transform:none;transition:none}}",
+  "js": "var p=root.querySelector('.pw');if(!p)return;var c=document.createElement('canvas').getContext('2d');function trim(){p.querySelectorAll('[data-trim]').forEach(function(h){var cs=getComputedStyle(h),t=h.textContent.trim();if(!t)return;var ch=t.charAt(0);if(cs.textTransform==='uppercase')ch=ch.toUpperCase();c.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;h.style.textIndent=c.measureText(ch).actualBoundingBoxLeft+'px';});}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(trim);}else{trim();}window.addEventListener('resize',trim);if(ctx.reducedMotion)return;var col=root.closest('.os-col');var nl=col?col.querySelector('.os-block--newsletter'):null;if(nl){nl.classList.add('pw-rv');}p.classList.add('js-rv');var els=[].slice.call(p.querySelectorAll('.rv'));if(nl)els.push(nl);if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -40px 0px'});els.forEach(function(e){io.observe(e);});",
+  "section": {
+    "width": "full",
+    "padding": {
+      "d": "none",
+      "m": "none"
+    }
+  },
+  "ai": {
+    "purpose": "A numbered list such as the four parts or the five measures.",
+    "whenToUse": "Inner pages."
+  }
+}
