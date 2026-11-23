@@ -10,7 +10,7 @@
   "deploy": {
     "target": "github-pages",
     "url": "https://life-culture.github.io/power-with-sophia-life/",
-    "customDomain": null
+    "customDomain": "powerwith.co"
   },
   "features": {
     "forms": true,
