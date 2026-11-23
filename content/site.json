@@ -1,6 +1,7 @@
 {
   "title": "Power With",
   "tagline": "The Foundation of Lasting Influence",
+  "favicon": "media/2026/11/power-with-favicon-3wg2.png",
   "nav": [
     {
       "type": "page",
@@ -102,7 +103,8 @@
   },
   "seo": {
     "titleTemplate": "%s",
-    "description": "Power With: The Foundation of Lasting Influence, a book by Sophia Life."
+    "description": "Power With: The Foundation of Lasting Influence, a book by Sophia Life.",
+    "image": "media/2026/11/power-with-share-hero-ad5e8a09.jpg"
   },
   "locale": "en-US",
   "integrations": {

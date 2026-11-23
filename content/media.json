@@ -10,5 +10,51 @@
     "alt": "Two copies of Power With by Sophia Life leaning on a stone step in afternoon light, with window shadows falling across them",
     "originalName": "power-with-book-on-ledge.jpg",
     "createdAt": "2026-11-23T01:29:35.880Z"
+  },
+  "media/2026/11/power-with-favicon-3wg2.png": {
+    "id": "med_3wg2rpbz31",
+    "path": "media/2026/11/power-with-favicon-3wg2.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 4503,
+    "width": 512,
+    "height": 512,
+    "alt": "Power With icon: two overlapping gold circles on obsidian",
+    "originalName": "power-with-favicon.png",
+    "createdAt": "2026-11-23T05:03:04.708Z"
+  },
+  "media/2026/11/power-with-social-share-d2ff424b.jpg": {
+    "id": "med_d0ddxfr0rw",
+    "path": "media/2026/11/power-with-social-share-d2ff424b.jpg",
+    "kind": "image",
+    "mime": "image/jpeg",
+    "bytes": 77853,
+    "width": 1200,
+    "height": 630,
+    "alt": "Power With: The Foundation of Lasting Influence, with the two-circle sigil in gold on obsidian.",
+    "focal": [
+      0.2,
+      0.95
+    ],
+    "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAD0lEQVR4AQEEAPv/AAILEwAzACGlGxwFAAAAAElFTkSuQmCC",
+    "originalName": "power-with-social-share.jpg",
+    "createdAt": "2026-11-23T05:04:56.050Z"
+  },
+  "media/2026/11/power-with-share-hero-ad5e8a09.jpg": {
+    "id": "med_01y9pq5x5f",
+    "path": "media/2026/11/power-with-share-hero-ad5e8a09.jpg",
+    "kind": "image",
+    "mime": "image/jpeg",
+    "bytes": 27848,
+    "width": 1200,
+    "height": 630,
+    "alt": "Power With: The Foundation of Lasting Influence, with the two-circle sigil in gold on obsidian.",
+    "focal": [
+      0.48,
+      0.56
+    ],
+    "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAD0lEQVR4AQEEAPv/AAILEgAyACDuvm8UAAAAAElFTkSuQmCC",
+    "originalName": "power-with-share-hero.png",
+    "createdAt": "2026-11-23T05:07:20.149Z"
   }
 }
