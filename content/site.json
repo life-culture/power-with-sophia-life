@@ -1,0 +1,57 @@
+{
+  "title": "Power With · Sophia Life",
+  "nav": [],
+  "header": {
+    "variant": "classic-left",
+    "sticky": false,
+    "transparentOnHero": false,
+    "mobileMenu": "fullscreen"
+  },
+  "footer": {
+    "id": "sec_0a34macfbb",
+    "label": "Footer",
+    "layout": {
+      "mode": "stack",
+      "columns": {
+        "d": [
+          12
+        ]
+      }
+    },
+    "style": {
+      "colorTheme": "light-accent"
+    },
+    "blocks": [
+      {
+        "id": "blk_shx9zy8m2q",
+        "type": "text",
+        "v": 1,
+        "fields": {
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "© 2026 Power With · Sophia Life"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "seo": {
+    "titleTemplate": "%s — Power With · Sophia Life"
+  },
+  "locale": "en-US",
+  "integrations": {
+    "analytics": false,
+    "bookingUrl": null,
+    "stripeConnected": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.openspace.host/v1/site-config.json",
+  "siteId": "st_ketc45cg32",
+  "schemaVersion": 1,
+  "template": {
+    "id": "import",
+    "version": "1.0.0"
+  },
+  "hub": "https://hub.openspace.host",
+  "deploy": {
+    "target": "github-pages",
+    "url": "https://life-culture.github.io/power-with-sophia-life/",
+    "customDomain": null
+  },
+  "features": {
+    "forms": true,
+    "newsletter": false,
+    "analytics": false,
+    "search": true
+  }
+}
